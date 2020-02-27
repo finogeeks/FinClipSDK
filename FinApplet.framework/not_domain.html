@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>非业务域名</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div style="margin-top: 90px;margin-bottom: 30px;">
+        <img style="height: 40px;" id="imgurl" src="" alt="">
+    </div>
+    <div style="line-height: 40px;font-size: 20px;">
+        无法打开<span id="mininame"></span>
+    </div>
+    <div style="color: #828282;padding: 0 15px;">
+        不支持打开非业务域名<span id="wvurl"></span>，请重新配置。
+    </div>
+</body>
+
+<script>
+!(function (global) {
+  const userAgent = global.navigator.userAgent;
+  const isIOS =  userAgent.indexOf('iPhone') !== -1;
+
+  const callbacks = {};
+  let callbackIndex = 0;
+
+  const handlers = {};
+
+  const invokeHandler = function(event, paramsString, callbackId) {
+    if (isIOS) {
+      global.webkit.messageHandlers.webInvokeHandler.postMessage({
+        C: event,
+        paramsString: paramsString,
+        callbackId: callbackId
+      });
+    } else {
+      const jsCoreHandleResult = FinChatJSCore.webInvokeHandler(event, paramsString, callbackId);
+      if (typeof jsCoreHandleResult !== 'undefined' && typeof callbacks[callbackId] === 'function' && jsCoreHandleResult !== '') {
+        try {
+          jsCoreHandleResult = JSON.parse(jsCoreHandleResult)
+        } catch(e) {
+          jsCoreHandleResult = {}
+        }
+        callbacks[callbackId](jsCoreHandleResult),
+        delete callbacks[callbackId]
+      }
+    }
+  };
+
+  const invoke = function(event, params, callback) {
+    // postMessage
+    const paramsString = JSON.stringify(params || {});
+    const callbackId = ++callbackIndex
+    callbacks[callbackId] = callback
+    invokeHandler(event, paramsString, callbackId)
+  };
+
+  const subscribe = function (eventName, handler) {
+    handlers[eventName] = handler
+  };
+
+  const webInvokeCallbackHandler = function (callbackId, params) {
+    const callback = callbacks[callbackId];
+    if (typeof callback === 'function') callback(params);
+    delete callbacks[callbackId]
+  };
+
+  const webSubscribeCallBackHandler = function (eventName, data, webviewId, reportParams) {
+    const handler =  handlers[eventName];
+    if (typeof handler === 'function') {
+      handler(data, webviewId, reportParams)
+    }
+  }
+
+  global.FinChatJSBridge = {
+    invoke,
+    subscribe,
+    webInvokeCallbackHandler,
+    webSubscribeCallBackHandler,
+  }
+})(window)
+
+</script>
+<script>
+  
+window.FinChatJSBridge.invoke('initPage', {}, (pageId) => {
+    window.FinChatJSBridge.invoke('getNonBusinessDomainHtmlParams', { pageId }, (result) => {
+        const mininame = result.appName;
+        const imgurl = result.appAvatar;
+        let wvurl = result.url;
+        const idx = wvurl.indexOf('://');
+        if (idx>0) {
+          const idx2 = wvurl.indexOf('/', (idx+3));
+          if (idx2 > 0) {
+            wvurl = wvurl.substring(0,idx2)
+          }
+        } else {
+          const idx2 = wvurl.indexOf('/');
+          if (idx2 > 0) {
+            wvurl = wvurl.substring(0,idx2)
+          }
+        }
+        document.getElementById('wvurl').innerHTML = wvurl;
+        document.getElementById('mininame').innerHTML = mininame;
+        document.getElementById('imgurl').src = imgurl;
+    });
+});
+
+</script>
+</html>
