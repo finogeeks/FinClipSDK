@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "FinApplet"
-  s.version      = "2.0.190"
-  s.summary      = "MatrixSDK."
+  s.version      = "2.0.191"
+  s.summary      = "凡泰小程序SDK."
   s.description  = <<-DESC
                     this is common
                    DESC
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.author             = { "developer" => "developer@finogeeks.com" }
   s.platform     = :ios, "7.0"
   s.ios.deployment_target = "8.0"
-  s.source       = { :git => 'https://github.com/finogeeks/MOPLibrary.git', :tag =>'2.0.190' }
+  s.source       = { :git => 'https://github.com/finogeeks/MOPLibrary.git', :tag =>'2.0.191' }
   s.vendored_frameworks = "FinApplet.framework" 
   s.requires_arc = true
 end
