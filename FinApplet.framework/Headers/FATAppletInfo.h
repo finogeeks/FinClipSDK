@@ -39,6 +39,12 @@
 /// 小程序封面图
 @property (nonatomic, copy) NSString *appThumbnail;
 
+/// 小程序版本信息
+@property (nonatomic, copy) NSString *versionDescription;
+
+/// 小程序主体信息（机构名称）
+@property (nonatomic, copy) NSString *groupName;
+
 /// 小程序是否已安装 （其实类似收藏）
 @property (nonatomic, assign) BOOL installed;
 

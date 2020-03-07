@@ -210,7 +210,7 @@
 		</data>
 		<key>Headers/FATAppletInfo.h</key>
 		<data>
-		ogI1ShNxVRqHvsoQ1RAudYPDSM8=
+		fkEkc0nlqj+UnanFn9+bO8NCawQ=
 		</data>
 		<key>Headers/FATAppletMenuProtocol.h</key>
 		<data>
@@ -234,7 +234,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		qKNby0dE9P7CnxKwZRtj9LiELEM=
+		DXuUfXX1ky4wG7w2irbQqG+YOkk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -912,11 +912,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ogI1ShNxVRqHvsoQ1RAudYPDSM8=
+			fkEkc0nlqj+UnanFn9+bO8NCawQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			+l8K/y7Z958NKxMGMatyR9OrOh9QU5+LmtEwF23SklE=
+			FSyI8CWSaBAQOljlLUOEb27LkJOf4aKKJ1NzeBVkkLc=
 			</data>
 		</dict>
 		<key>Headers/FATAppletMenuProtocol.h</key>
