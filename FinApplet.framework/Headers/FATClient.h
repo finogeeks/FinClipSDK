@@ -143,21 +143,6 @@
 */
 - (void)closeAllApplets;
 
-#pragma mark - new api list
-
-/**
- 搜索小程序(新接口)
- 
- @param searchText 搜索的内容，可不传
- @param pageSize  分页查询每页个数，默认为10
- @param pageNo  页面数
- @param completion 完成的回调
- */
-- (void)fat_fetchAppletsWithSearchText:(NSString *)searchText
-                              pageSize:(NSString *)pageSize
-                                pageNo:(NSString *)pageNo
-                            completion:(void (^)(NSArray *applets, NSError *error))completion;
-
 #pragma mark - recent used applet api
 /**
  获取本地已缓存的小程序

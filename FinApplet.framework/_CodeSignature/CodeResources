@@ -40,10 +40,6 @@
 		<data>
 		xTZadSCFYRcgW7xp8ZDXl3gXdZw=
 		</data>
-		<key>FinApplet.bundle/framework.zip</key>
-		<data>
-		QIdxdJ1orQ1Dt4nq1Y5u8AxsOW4=
-		</data>
 		<key>FinApplet.bundle/miniapps_close_dark@2x.png</key>
 		<data>
 		vrgA90MgHmwk7vkICAbJ0hcoVe8=
@@ -218,7 +214,7 @@
 		</data>
 		<key>Headers/FATClient.h</key>
 		<data>
-		R4eycj5tKFbwhbth4Ywu9981z7Q=
+		iRaetKHRorU6Sd7H5F9Wh6HLWaQ=
 		</data>
 		<key>Headers/FATConfig.h</key>
 		<data>
@@ -226,7 +222,7 @@
 		</data>
 		<key>Headers/FATConstant.h</key>
 		<data>
-		A1auRO1cvwo1T9wshywfGcQ12uQ=
+		hFfdOcj6OENu6b6KnAubuDH6ovU=
 		</data>
 		<key>Headers/FinApplet.h</key>
 		<data>
@@ -234,7 +230,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		DXuUfXX1ky4wG7w2irbQqG+YOkk=
+		zCll+KN+2/HZ+yHB9cl6yuKwZsk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -444,17 +440,6 @@
 			<key>hash2</key>
 			<data>
 			6Om4duBwWSdJFCHcC2XwhZHYIfhURiR/+w5l8Xhmxic=
-			</data>
-		</dict>
-		<key>FinApplet.bundle/framework.zip</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			QIdxdJ1orQ1Dt4nq1Y5u8AxsOW4=
-			</data>
-			<key>hash2</key>
-			<data>
-			QniND4kVEPa9gKxE/N5PFNq+FP4MI+ocYy99uwR3a1Q=
 			</data>
 		</dict>
 		<key>FinApplet.bundle/miniapps_close_dark@2x.png</key>
@@ -934,11 +919,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R4eycj5tKFbwhbth4Ywu9981z7Q=
+			iRaetKHRorU6Sd7H5F9Wh6HLWaQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZA2kggyWtVtegKcU0czdWQXI/JusdoWPLEUWpCrUaAM=
+			GJh1mspW0DAk1PScbTRhe8B5P/V+oD/AfNaPX6oFha8=
 			</data>
 		</dict>
 		<key>Headers/FATConfig.h</key>
@@ -956,11 +941,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			A1auRO1cvwo1T9wshywfGcQ12uQ=
+			hFfdOcj6OENu6b6KnAubuDH6ovU=
 			</data>
 			<key>hash2</key>
 			<data>
-			dJTczUu59f9rGE4Vos2S75Rqh8593gZL645tI4EdNvs=
+			rWmPMz9hkuWX9OsfYhXLWiY7mNLLCSgnz4C5F4K1Qd0=
 			</data>
 		</dict>
 		<key>Headers/FinApplet.h</key>

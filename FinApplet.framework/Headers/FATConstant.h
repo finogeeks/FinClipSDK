@@ -37,11 +37,7 @@ FOUNDATION_EXTERN FATShareMediaType const FATShareMediaTypeVideo;
 FOUNDATION_EXTERN FATShareMediaType const FATShareMediaTypeWebPage;
 FOUNDATION_EXTERN FATShareMediaType const FATShareMediaTypeMiniProgram;
 
-// 本地缓存的收藏小程序列表变更
-FOUNDATION_EXTERN NSString *const kFavoriteAppletListDidChangeNotification;
 // 本地缓存的最近使用的小程序列表变更
 FOUNDATION_EXTERN NSString *const kRecentUsedAppletListDidChangeNotification;
-// 小程序的安装状态发生变化
-FOUNDATION_EXTERN NSString *const kAppletInstallStateDidChangeNotification;
 
 #endif /* FATConstant_h */
