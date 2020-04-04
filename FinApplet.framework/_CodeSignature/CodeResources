@@ -40,6 +40,10 @@
 		<data>
 		xTZadSCFYRcgW7xp8ZDXl3gXdZw=
 		</data>
+		<key>FinApplet.bundle/framework.zip</key>
+		<data>
+		hcZ2iPeWeGGBcIvzpqpCpQNzMII=
+		</data>
 		<key>FinApplet.bundle/miniapps_close_dark@2x.png</key>
 		<data>
 		vrgA90MgHmwk7vkICAbJ0hcoVe8=
@@ -230,7 +234,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/vJ6fsTSEo1miadkSOqnzJB89/w=
+		GYpIRqRmPZWB07TuwrEuZDCopaE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -440,6 +444,17 @@
 			<key>hash2</key>
 			<data>
 			6Om4duBwWSdJFCHcC2XwhZHYIfhURiR/+w5l8Xhmxic=
+			</data>
+		</dict>
+		<key>FinApplet.bundle/framework.zip</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hcZ2iPeWeGGBcIvzpqpCpQNzMII=
+			</data>
+			<key>hash2</key>
+			<data>
+			d0C064uHhbBodnsNRyyx4TmcTavsT9/lgufAAN5JSa8=
 			</data>
 		</dict>
 		<key>FinApplet.bundle/miniapps_close_dark@2x.png</key>
