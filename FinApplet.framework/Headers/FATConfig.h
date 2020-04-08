@@ -48,6 +48,11 @@ appId，也就是 SDK secret，必填
 
 @property (nonatomic, strong) NSDictionary *theme;
 
+/**
+apm 统计的扩展信息
+*/
+@property (nonatomic, strong) NSDictionary *apmExtension;
+
 #pragma mark - method
 /// 创建config对象
 /// @param appSecret appSecret，也就是SDK Secret

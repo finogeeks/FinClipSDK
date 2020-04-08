@@ -40,10 +40,6 @@
 		<data>
 		xTZadSCFYRcgW7xp8ZDXl3gXdZw=
 		</data>
-		<key>FinApplet.bundle/framework.zip</key>
-		<data>
-		hcZ2iPeWeGGBcIvzpqpCpQNzMII=
-		</data>
 		<key>FinApplet.bundle/miniapps_close_dark@2x.png</key>
 		<data>
 		vrgA90MgHmwk7vkICAbJ0hcoVe8=
@@ -222,7 +218,7 @@
 		</data>
 		<key>Headers/FATConfig.h</key>
 		<data>
-		4gzEMrYoLXUAzKSkSj4B7m2wk+c=
+		KLzJPuCEidfwdcZPb9UzCn37Oos=
 		</data>
 		<key>Headers/FATConstant.h</key>
 		<data>
@@ -234,7 +230,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		GYpIRqRmPZWB07TuwrEuZDCopaE=
+		iPemNij+1L8XvUURNBrCLcqdsUU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -444,17 +440,6 @@
 			<key>hash2</key>
 			<data>
 			6Om4duBwWSdJFCHcC2XwhZHYIfhURiR/+w5l8Xhmxic=
-			</data>
-		</dict>
-		<key>FinApplet.bundle/framework.zip</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			hcZ2iPeWeGGBcIvzpqpCpQNzMII=
-			</data>
-			<key>hash2</key>
-			<data>
-			d0C064uHhbBodnsNRyyx4TmcTavsT9/lgufAAN5JSa8=
 			</data>
 		</dict>
 		<key>FinApplet.bundle/miniapps_close_dark@2x.png</key>
@@ -945,11 +930,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4gzEMrYoLXUAzKSkSj4B7m2wk+c=
+			KLzJPuCEidfwdcZPb9UzCn37Oos=
 			</data>
 			<key>hash2</key>
 			<data>
-			Gw35yWjB6rSQjRbDLcFxYuEoqk9tPmb2wQmvqPJWBzA=
+			uCNvAnuD1FyUNuQ1CqzcSKYzfcnNdTIA8JV2JtaEZG0=
 			</data>
 		</dict>
 		<key>Headers/FATConstant.h</key>
