@@ -74,35 +74,35 @@
 		</data>
 		<key>FinApplet.bundle/minipro_list_collect@2x.png</key>
 		<data>
-		5/W6j909FOuGV5I/0kdYxJGiTac=
+		eHVjoaCYkTCvO4GiGg0/84SI6sw=
 		</data>
 		<key>FinApplet.bundle/minipro_list_collect@3x.png</key>
 		<data>
-		wUTrbw9gKC2p7Idbr6DPvwA/EQI=
+		3EXvge+oiXZQMWLREzvHfsY6324=
 		</data>
 		<key>FinApplet.bundle/minipro_list_feedback@2x.png</key>
 		<data>
-		Ft9MJDSrDE96n4A/ksriZhq/RNU=
+		1riz/0eZ8oEWNk/hU8+4OhYb6PE=
 		</data>
 		<key>FinApplet.bundle/minipro_list_feedback@3x.png</key>
 		<data>
-		EVYYEmRCk2lBUDLURiqxyHSKz4M=
+		1sTc19rlnmnR1qJjAzcd2SUu8m0=
 		</data>
 		<key>FinApplet.bundle/minipro_list_forward@2x.png</key>
 		<data>
-		7pJHI+GtjAS/z+qC5uqXnvt17EI=
+		cA4WGtY1k2tKLebbdZ++YqPX/XI=
 		</data>
 		<key>FinApplet.bundle/minipro_list_forward@3x.png</key>
 		<data>
-		6OZmbx+AiTFI8332OVLV5SMcgJ8=
+		5mSmJe6gH0InB0GGp0I3jyS+ijc=
 		</data>
 		<key>FinApplet.bundle/minipro_list_home@2x.png</key>
 		<data>
-		sozcwu4XP22gWMj31FFmWhWZXoM=
+		dS3RiUnvpioM2MeYgS1ToM7nSxI=
 		</data>
 		<key>FinApplet.bundle/minipro_list_home@3x.png</key>
 		<data>
-		d8geC294tdJujIppdk5hEZZ/R/k=
+		WsB3BoBpf3Ubszu+K7AxgGVQ9Wg=
 		</data>
 		<key>FinApplet.bundle/minipro_list_info@2x.png</key>
 		<data>
@@ -120,13 +120,21 @@
 		<data>
 		ksKQMIYYGrO3v+JRmjyZRDtB9ss=
 		</data>
-		<key>FinApplet.bundle/minipro_list_uncollect@2x.png</key>
+		<key>FinApplet.bundle/minipro_list_service@2x.png</key>
 		<data>
-		MXUeomCN529yV4IB0PUuzgGQy30=
+		5cGtn31ELFKG4ohFcrritGkHyQA=
 		</data>
-		<key>FinApplet.bundle/minipro_list_uncollect@3x.png</key>
+		<key>FinApplet.bundle/minipro_list_service@3x.png</key>
 		<data>
-		NjnUFIOlev9hypqf+LKsH57/SL8=
+		R6rDKUSNX4m9EgneY7mxdi4gv+c=
+		</data>
+		<key>FinApplet.bundle/minipro_list_setting@2x.png</key>
+		<data>
+		sHjD5oCdRl5WuqtADN1vLNReNS8=
+		</data>
+		<key>FinApplet.bundle/minipro_list_setting@3x.png</key>
+		<data>
+		dLYvk7WpgdL2EXwZy2tsaEQyDio=
 		</data>
 		<key>FinApplet.bundle/minipro_loading_fail@2x.png</key>
 		<data>
@@ -155,6 +163,14 @@
 		<key>FinApplet.bundle/minipro_video_slider@2x.png</key>
 		<data>
 		kqqkroEfWiqJZItF+1wz3j9u3Lo=
+		</data>
+		<key>FinApplet.bundle/public_arrow@2x.png</key>
+		<data>
+		bMW41/CazyTyoxQOKR3CDb3ZdEM=
+		</data>
+		<key>FinApplet.bundle/public_arrow@3x.png</key>
+		<data>
+		N5Kpy0AajSJDlDh1C4YAmcv6zx0=
 		</data>
 		<key>FinApplet.bundle/public_toast_error@2x.png</key>
 		<data>
@@ -202,7 +218,7 @@
 		</data>
 		<key>Headers/FATAppletDelegate.h</key>
 		<data>
-		Tv5+rHZbhaKedTH8+hKI1PsJKUU=
+		qs7XNvJGbZZM8JtdT8N44tGzJ4I=
 		</data>
 		<key>Headers/FATAppletInfo.h</key>
 		<data>
@@ -218,7 +234,7 @@
 		</data>
 		<key>Headers/FATConfig.h</key>
 		<data>
-		KLzJPuCEidfwdcZPb9UzCn37Oos=
+		18L4gBaCQC9566xYb57MtpnvzGY=
 		</data>
 		<key>Headers/FATConstant.h</key>
 		<data>
@@ -230,7 +246,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		iPemNij+1L8XvUURNBrCLcqdsUU=
+		O4FwJbTKoeF6z2uXvjN8REufVNs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -534,88 +550,88 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5/W6j909FOuGV5I/0kdYxJGiTac=
+			eHVjoaCYkTCvO4GiGg0/84SI6sw=
 			</data>
 			<key>hash2</key>
 			<data>
-			j3acpV/1LAY+igpsuaFknyltzIrS6LUyWxmGSfpPYdU=
+			PHg4+g8JcaESVpvHeJlXK3KQxfnQ59JF/oNGgRHGR4k=
 			</data>
 		</dict>
 		<key>FinApplet.bundle/minipro_list_collect@3x.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wUTrbw9gKC2p7Idbr6DPvwA/EQI=
+			3EXvge+oiXZQMWLREzvHfsY6324=
 			</data>
 			<key>hash2</key>
 			<data>
-			lmliCZZNnxEnF17PuUh0U53ZtTTEjrWJ48RrqY6Jyjs=
+			XFDt9QEVnTxnV37gPjV8dqXT8P1IQzMupgJWG8nLkGM=
 			</data>
 		</dict>
 		<key>FinApplet.bundle/minipro_list_feedback@2x.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Ft9MJDSrDE96n4A/ksriZhq/RNU=
+			1riz/0eZ8oEWNk/hU8+4OhYb6PE=
 			</data>
 			<key>hash2</key>
 			<data>
-			quFA9L5eETqPxEfnKoaCOywEOjTUPXEHvVELzTjfEqg=
+			3ghJFDMKCHXg890MmOUQ1vpqfOpDvHmD0xf8UXWmA2w=
 			</data>
 		</dict>
 		<key>FinApplet.bundle/minipro_list_feedback@3x.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			EVYYEmRCk2lBUDLURiqxyHSKz4M=
+			1sTc19rlnmnR1qJjAzcd2SUu8m0=
 			</data>
 			<key>hash2</key>
 			<data>
-			84/W7OM/g3skyeCWHF/1CwicLi2jrm/5m5gwhM0Bd88=
+			CdbO1fLTWC/XHyldhDtmgBygot4T2wWUYkRqYC/CJAc=
 			</data>
 		</dict>
 		<key>FinApplet.bundle/minipro_list_forward@2x.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7pJHI+GtjAS/z+qC5uqXnvt17EI=
+			cA4WGtY1k2tKLebbdZ++YqPX/XI=
 			</data>
 			<key>hash2</key>
 			<data>
-			Vx0EKDeZXq+WUeDnI1wN0rOOHdFyEVcMT5vH11t3xPI=
+			VvmQnxKQEkgtG2Lnrf7OjXsKF2fytTLlzQTKNHi6/DA=
 			</data>
 		</dict>
 		<key>FinApplet.bundle/minipro_list_forward@3x.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6OZmbx+AiTFI8332OVLV5SMcgJ8=
+			5mSmJe6gH0InB0GGp0I3jyS+ijc=
 			</data>
 			<key>hash2</key>
 			<data>
-			vYXelj1K28B474VjTXQhqxsklwD74ShZ3LJvIkZEAHE=
+			//EJFyZ40wpThAWyrSnV0cScwIQIGL8lX0yaUEv8qwg=
 			</data>
 		</dict>
 		<key>FinApplet.bundle/minipro_list_home@2x.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sozcwu4XP22gWMj31FFmWhWZXoM=
+			dS3RiUnvpioM2MeYgS1ToM7nSxI=
 			</data>
 			<key>hash2</key>
 			<data>
-			7tefvGrwoXHLBSO0NRO82OtTuE9HnD30y+etdIo9pVg=
+			jqoDZQt+2ADxcsUyPrRA+LPe3B3Q5JbTxbroDrFMoF8=
 			</data>
 		</dict>
 		<key>FinApplet.bundle/minipro_list_home@3x.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			d8geC294tdJujIppdk5hEZZ/R/k=
+			WsB3BoBpf3Ubszu+K7AxgGVQ9Wg=
 			</data>
 			<key>hash2</key>
 			<data>
-			Qq/xDG9ko2d+A321Jc3ce9y0Sb1kDJyMFuPe775CUVE=
+			H72NrwEE4KFIB3d3ZQ0B+FSq5BDBdfYzAycRrKnDNjg=
 			</data>
 		</dict>
 		<key>FinApplet.bundle/minipro_list_info@2x.png</key>
@@ -662,26 +678,48 @@
 			7TvkWQjZEEZDr1YujmlIZP6R/omyuKFsTghzo+ugGcM=
 			</data>
 		</dict>
-		<key>FinApplet.bundle/minipro_list_uncollect@2x.png</key>
+		<key>FinApplet.bundle/minipro_list_service@2x.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MXUeomCN529yV4IB0PUuzgGQy30=
+			5cGtn31ELFKG4ohFcrritGkHyQA=
 			</data>
 			<key>hash2</key>
 			<data>
-			rl6FKd0szHeBS+r1c8H72y54Vn+Q5UjGno2ioXFHy5g=
+			IZmNPCbx3VoTVhE/ovUjRZNVjTl12RlD3t3oY34MnVs=
 			</data>
 		</dict>
-		<key>FinApplet.bundle/minipro_list_uncollect@3x.png</key>
+		<key>FinApplet.bundle/minipro_list_service@3x.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NjnUFIOlev9hypqf+LKsH57/SL8=
+			R6rDKUSNX4m9EgneY7mxdi4gv+c=
 			</data>
 			<key>hash2</key>
 			<data>
-			BlWA6Tc4e34WWUcobY0ivTW0k4KlIaLKXkn38SnUUEg=
+			D2MVhMS48QJZbqt6MSuXCWQLByhKhaD742uXnQ7qe/s=
+			</data>
+		</dict>
+		<key>FinApplet.bundle/minipro_list_setting@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sHjD5oCdRl5WuqtADN1vLNReNS8=
+			</data>
+			<key>hash2</key>
+			<data>
+			w0qeWEkmVdrfj5vSI2tHLLFbB3Kx5eG1Cve8wdhLYto=
+			</data>
+		</dict>
+		<key>FinApplet.bundle/minipro_list_setting@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dLYvk7WpgdL2EXwZy2tsaEQyDio=
+			</data>
+			<key>hash2</key>
+			<data>
+			xERHKlwk13VUYhA9e2BvDExa+KzGdy6LxmT1K3wfJjQ=
 			</data>
 		</dict>
 		<key>FinApplet.bundle/minipro_loading_fail@2x.png</key>
@@ -759,6 +797,28 @@
 			<key>hash2</key>
 			<data>
 			rXbjHy5jhFYV68A77iJMK8t3y5auIwo5F55p1BZHOZQ=
+			</data>
+		</dict>
+		<key>FinApplet.bundle/public_arrow@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bMW41/CazyTyoxQOKR3CDb3ZdEM=
+			</data>
+			<key>hash2</key>
+			<data>
+			acg8FtDQ2SOjEIz8lO1TvqtduCQ1nRdzRzovgdErvNM=
+			</data>
+		</dict>
+		<key>FinApplet.bundle/public_arrow@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			N5Kpy0AajSJDlDh1C4YAmcv6zx0=
+			</data>
+			<key>hash2</key>
+			<data>
+			r27NpYA4tZKqMeAB181MhhIPQFLVzW3hlXsxMAaIqO0=
 			</data>
 		</dict>
 		<key>FinApplet.bundle/public_toast_error@2x.png</key>
@@ -886,11 +946,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Tv5+rHZbhaKedTH8+hKI1PsJKUU=
+			qs7XNvJGbZZM8JtdT8N44tGzJ4I=
 			</data>
 			<key>hash2</key>
 			<data>
-			//ObHibogG/tZvS/gHl6C4MWWEI4jnkqaNcA5Xi8G9M=
+			vtHobl6wCpPPryNCvRwbhCTX7ioblJZORVt5zX0KZDY=
 			</data>
 		</dict>
 		<key>Headers/FATAppletInfo.h</key>
@@ -930,11 +990,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KLzJPuCEidfwdcZPb9UzCn37Oos=
+			18L4gBaCQC9566xYb57MtpnvzGY=
 			</data>
 			<key>hash2</key>
 			<data>
-			uCNvAnuD1FyUNuQ1CqzcSKYzfcnNdTIA8JV2JtaEZG0=
+			gRHcjv+DeNit44I2Vmoc18gMzpHfiYdWapcLZ2fqCxk=
 			</data>
 		</dict>
 		<key>Headers/FATConstant.h</key>
