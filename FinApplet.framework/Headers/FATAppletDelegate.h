@@ -38,15 +38,13 @@
 - (NSDictionary *)getUserInfoWithAppletInfo:(FATAppletInfo *)appletInfo;
 
 /// 更多按钮中自定义的菜单，会在页面弹出菜单时调用该api
-/// @param appletInfo 小程序信息
-/// @param path 页面路径
-- (NSArray<id<FATAppletMenuProtocol>> *)customMenusInApplet:(FATAppletInfo *)appletInfo atPath:(NSString *)path;
+/// @param path 点击菜单时的当前页面路径
+- (NSArray<id<FATAppletMenuProtocol>> *)customMenusInMoreItemAtPath:(NSString *)path;
 
 /// 点击自定义菜单时，会触发的事件
 /// @param customMenu 自定义菜单对象
-/// @param appletInfo 小程序信息
 /// @param path 当前页面路径
-- (void)customMenu:(id<FATAppletMenuProtocol>)customMenu inApplet:(FATAppletInfo *)appletInfo didClickAtPath:(NSString *)path;
+- (void)customMenu:(id<FATAppletMenuProtocol>)customMenu didClickAtPath:(NSString *)path;
 
 @end
 
