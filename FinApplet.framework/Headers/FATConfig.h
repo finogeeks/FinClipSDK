@@ -41,17 +41,20 @@ appId，也就是 SDK secret，必填
  */
 @property (nonatomic, copy) NSString *apiPrefix;
 
-// 增加小程序接口地址，可注入
-@property (nonatomic, copy) NSString *widgetsInfoURL;
-@property (nonatomic, copy) NSString *metaResourceURL;
-@property (nonatomic, copy) NSString *resourceDownLoadURL;
-
 @property (nonatomic, strong) NSDictionary *theme;
 
 /**
 apm 统计的扩展信息
 */
 @property (nonatomic, strong) NSDictionary *apmExtension;
+
+/**
+灰度发布的扩展信息
+*/
+@property (nonatomic, strong) NSDictionary *grayExtension;
+
+/// 是否隐藏小程序 更多中的反馈与投诉的菜单
+@property (nonatomic, assign) BOOL hideFeedbackMenu;
 
 #pragma mark - method
 /// 创建config对象
