@@ -56,6 +56,9 @@ apm 统计的扩展信息
 /// 是否隐藏小程序 更多中的反馈与投诉的菜单
 @property (nonatomic, assign) BOOL hideFeedbackMenu;
 
+/// 是否隐藏回到首页菜单
+@property (nonatomic, assign) BOOL hideBackToHome;
+
 #pragma mark - method
 /// 创建config对象
 /// @param appSecret appSecret，也就是SDK Secret
