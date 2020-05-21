@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "FATConstant.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FATConfig : NSObject
@@ -43,15 +45,13 @@ appId，也就是 SDK secret，必填
 
 @property (nonatomic, strong) NSDictionary *theme;
 
+/// 小程序SDK中的api加密，默认为MD5
+@property (nonatomic, assign) FATApiCryptType cryptType;
+
 /**
 apm 统计的扩展信息
 */
 @property (nonatomic, strong) NSDictionary *apmExtension;
-
-/**
-灰度发布的扩展信息
-*/
-@property (nonatomic, strong) NSDictionary *grayExtension;
 
 /// 是否隐藏小程序 更多中的反馈与投诉的菜单
 @property (nonatomic, assign) BOOL hideFeedbackMenu;

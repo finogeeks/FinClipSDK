@@ -106,6 +106,29 @@
                completion:(void (^)(BOOL result, NSError *error))completion;
 
 /**
+ 打开服务器上的小程序，带启动动画参数、关闭回调
+
+ @param appletId 小程序的appId, 不能为空
+ @param startParams 启动小程序时的参数，可为nil。目前支持的key只有path、query、scene。
+ 示例:
+ @{
+ @"path":@"/pages/index/index",
+ @"query":@"key1=value1&key2=value2",
+ @"scene" : @"1001"
+ };
+ @param parentVC 在哪个页面的基础上弹出小程序，❗️不能为空
+ @param transitionStyle 弹出动画方式
+ @param completion 完成的回调，失败时会返回error信息
+ @param closeCompletion 关闭小程序的回调
+ */
+- (void)startRemoteApplet:(NSString *)appletId
+              startParams:(NSDictionary *)startParams
+   InParentViewController:(UIViewController *)parentVC
+          transitionStyle:(FATTranstionStyle)transitionStyle
+               completion:(void (^)(BOOL result, NSError *error))completion
+          closeCompletion:(dispatch_block_t)closeCompletion;
+
+/**
  打开服务器上的小程序，带提交序列、动画参数
 
  @param appletId 小程序的appId, 不能为空

@@ -20,6 +20,11 @@ typedef NS_ENUM(NSUInteger, FATTranstionStyle) {
     FATTranstionStylePush,          // 页面从右往左弹出，类似push效果
 };
 
+typedef NS_ENUM(NSUInteger, FATApiCryptType) {
+    FATApiCryptTypeMD5,     // MD5
+    FATApiCryptTypeSM,      // 国密MD5
+};
+
 /**
  扩展API处理后的回调
  

@@ -37,6 +37,11 @@
 /// @param appletInfo 小程序信息
 - (NSDictionary *)getUserInfoWithAppletInfo:(FATAppletInfo *)appletInfo;
 
+/// 小程序灰度扩展参数
+/// @param appletId 小程序id
+- (NSDictionary *)grayExtensionWithAppletId:(NSString *)appletId;
+
+#pragma mark - more menu
 /// 更多按钮中自定义的菜单，会在页面弹出菜单时调用该api
 /// @param appletInfo 小程序信息
 /// @param path 页面路径

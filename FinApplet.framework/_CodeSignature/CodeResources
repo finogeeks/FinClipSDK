@@ -4,6 +4,106 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>FATMImagePickerController.bundle/MMVideoPreviewPlay@2x.png</key>
+		<data>
+		a0njhOHaqgjMkmBpYWYxnMlnDyU=
+		</data>
+		<key>FATMImagePickerController.bundle/MMVideoPreviewPlayHL@2x.png</key>
+		<data>
+		ckX1OIPbendWtIY9d+j+kbbo9Vw=
+		</data>
+		<key>FATMImagePickerController.bundle/Root.plist</key>
+		<data>
+		jOhqEUF1/xyY+fuswiWT+ELC3dI=
+		</data>
+		<key>FATMImagePickerController.bundle/VideoSendIcon@2x.png</key>
+		<data>
+		w2Y6klkQgHjIYsEZUfBZs3Yt+/0=
+		</data>
+		<key>FATMImagePickerController.bundle/en.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			novGefDyl9FiTbCwHdjSuE+KVpg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>FATMImagePickerController.bundle/navi_back@2x.png</key>
+		<data>
+		M1rsPoGnPAmXKZoRtK1wzcseNYI=
+		</data>
+		<key>FATMImagePickerController.bundle/photo_def_photoPickerVc@2x.png</key>
+		<data>
+		TowaKFKzU3fYhK+It4oKIhuCpk0=
+		</data>
+		<key>FATMImagePickerController.bundle/photo_def_previewVc@2x.png</key>
+		<data>
+		TowaKFKzU3fYhK+It4oKIhuCpk0=
+		</data>
+		<key>FATMImagePickerController.bundle/photo_number_icon@2x.png</key>
+		<data>
+		nKZxsZi268vELJiTN32F7cHAkY8=
+		</data>
+		<key>FATMImagePickerController.bundle/photo_original_def@2x.png</key>
+		<data>
+		uaNzK2Fysh8bWaGPqXKapGGUX9g=
+		</data>
+		<key>FATMImagePickerController.bundle/photo_original_sel@2x.png</key>
+		<data>
+		qqo+wstTy+/qO7CID91ZNrhq/Us=
+		</data>
+		<key>FATMImagePickerController.bundle/photo_sel_photoPickerVc@2x.png</key>
+		<data>
+		1maHDZQyFhPSgDG5iqKrPz10BQE=
+		</data>
+		<key>FATMImagePickerController.bundle/photo_sel_previewVc@2x.png</key>
+		<data>
+		YGb26ZPCkiAL0gm2EPZvp52S3h4=
+		</data>
+		<key>FATMImagePickerController.bundle/preview_number_icon@2x.png</key>
+		<data>
+		nKZxsZi268vELJiTN32F7cHAkY8=
+		</data>
+		<key>FATMImagePickerController.bundle/preview_original_def@2x.png</key>
+		<data>
+		GVzy25+bRYA1MrAG22+vkO35VRo=
+		</data>
+		<key>FATMImagePickerController.bundle/takePicture80@2x.png</key>
+		<data>
+		FRMjStf508fLB8xVTzk1PXoASmw=
+		</data>
+		<key>FATMImagePickerController.bundle/takePicture@2x.png</key>
+		<data>
+		I0tOOwrDT9Q2o3Jd0OeSTb4bPAE=
+		</data>
+		<key>FATMImagePickerController.bundle/vi.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			StuVjQObz/T1qp+Jav0LDJKiwro=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>FATMImagePickerController.bundle/zh-Hans.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			I6iWlZNc41F1sol2gU5Oa8S0/s4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>FATMImagePickerController.bundle/zh-Hant.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			i80sQg3gsa0HPHenlDdZJRNXF74=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>FinApplet.bundle/apha.plist</key>
 		<data>
 		foYE3YpEeKGtjxDZ/y0YYVtuxpY=
@@ -218,7 +318,7 @@
 		</data>
 		<key>Headers/FATAppletDelegate.h</key>
 		<data>
-		qs7XNvJGbZZM8JtdT8N44tGzJ4I=
+		hX8UixVAFEeroH7YNIVcJtGtMxQ=
 		</data>
 		<key>Headers/FATAppletInfo.h</key>
 		<data>
@@ -230,15 +330,15 @@
 		</data>
 		<key>Headers/FATClient.h</key>
 		<data>
-		iRaetKHRorU6Sd7H5F9Wh6HLWaQ=
+		mo2iYHNG2ZgohJ39v98ftvXhWl8=
 		</data>
 		<key>Headers/FATConfig.h</key>
 		<data>
-		1oHgUSWJgJHI+n24xOU6ZQ3kzg4=
+		Uf4LvW2dHUly9KCP2VcqzWt4dPk=
 		</data>
 		<key>Headers/FATConstant.h</key>
 		<data>
-		hFfdOcj6OENu6b6KnAubuDH6ovU=
+		Z+9ZJeYsTVGQC+LHJOZn/SmDat8=
 		</data>
 		<key>Headers/FinApplet.h</key>
 		<data>
@@ -246,112 +346,12 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		AqyVf8KToP/bn9wLJ1gDTDTLg9Y=
+		VgEPySPfNcYr66Bd2e9v6vQAxXU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		rxIDJgttvlpnPnlm6uBuPXs1fMk=
 		</data>
-		<key>TZImagePickerController.bundle/MMVideoPreviewPlay@2x.png</key>
-		<data>
-		a0njhOHaqgjMkmBpYWYxnMlnDyU=
-		</data>
-		<key>TZImagePickerController.bundle/MMVideoPreviewPlayHL@2x.png</key>
-		<data>
-		ckX1OIPbendWtIY9d+j+kbbo9Vw=
-		</data>
-		<key>TZImagePickerController.bundle/Root.plist</key>
-		<data>
-		jOhqEUF1/xyY+fuswiWT+ELC3dI=
-		</data>
-		<key>TZImagePickerController.bundle/VideoSendIcon@2x.png</key>
-		<data>
-		w2Y6klkQgHjIYsEZUfBZs3Yt+/0=
-		</data>
-		<key>TZImagePickerController.bundle/en.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			novGefDyl9FiTbCwHdjSuE+KVpg=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>TZImagePickerController.bundle/navi_back@2x.png</key>
-		<data>
-		M1rsPoGnPAmXKZoRtK1wzcseNYI=
-		</data>
-		<key>TZImagePickerController.bundle/photo_def_photoPickerVc@2x.png</key>
-		<data>
-		TowaKFKzU3fYhK+It4oKIhuCpk0=
-		</data>
-		<key>TZImagePickerController.bundle/photo_def_previewVc@2x.png</key>
-		<data>
-		TowaKFKzU3fYhK+It4oKIhuCpk0=
-		</data>
-		<key>TZImagePickerController.bundle/photo_number_icon@2x.png</key>
-		<data>
-		nKZxsZi268vELJiTN32F7cHAkY8=
-		</data>
-		<key>TZImagePickerController.bundle/photo_original_def@2x.png</key>
-		<data>
-		uaNzK2Fysh8bWaGPqXKapGGUX9g=
-		</data>
-		<key>TZImagePickerController.bundle/photo_original_sel@2x.png</key>
-		<data>
-		qqo+wstTy+/qO7CID91ZNrhq/Us=
-		</data>
-		<key>TZImagePickerController.bundle/photo_sel_photoPickerVc@2x.png</key>
-		<data>
-		1maHDZQyFhPSgDG5iqKrPz10BQE=
-		</data>
-		<key>TZImagePickerController.bundle/photo_sel_previewVc@2x.png</key>
-		<data>
-		YGb26ZPCkiAL0gm2EPZvp52S3h4=
-		</data>
-		<key>TZImagePickerController.bundle/preview_number_icon@2x.png</key>
-		<data>
-		nKZxsZi268vELJiTN32F7cHAkY8=
-		</data>
-		<key>TZImagePickerController.bundle/preview_original_def@2x.png</key>
-		<data>
-		GVzy25+bRYA1MrAG22+vkO35VRo=
-		</data>
-		<key>TZImagePickerController.bundle/takePicture80@2x.png</key>
-		<data>
-		FRMjStf508fLB8xVTzk1PXoASmw=
-		</data>
-		<key>TZImagePickerController.bundle/takePicture@2x.png</key>
-		<data>
-		I0tOOwrDT9Q2o3Jd0OeSTb4bPAE=
-		</data>
-		<key>TZImagePickerController.bundle/vi.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			StuVjQObz/T1qp+Jav0LDJKiwro=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>TZImagePickerController.bundle/zh-Hans.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			I6iWlZNc41F1sol2gU5Oa8S0/s4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>TZImagePickerController.bundle/zh-Hant.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			i80sQg3gsa0HPHenlDdZJRNXF74=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>not_domain.html</key>
 		<data>
 		XbHk9Rx9ed8qAh7u0Z0lpu4/koU=
@@ -359,6 +359,234 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>FATMImagePickerController.bundle/MMVideoPreviewPlay@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			a0njhOHaqgjMkmBpYWYxnMlnDyU=
+			</data>
+			<key>hash2</key>
+			<data>
+			rpJCY4irJtYw12iyifl9WFsAVCDUZ60jE77ubgcOV/4=
+			</data>
+		</dict>
+		<key>FATMImagePickerController.bundle/MMVideoPreviewPlayHL@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ckX1OIPbendWtIY9d+j+kbbo9Vw=
+			</data>
+			<key>hash2</key>
+			<data>
+			eQMhR9TDkW66Ej6Wzh3vt0DqefvrcweFEnTJVgx+pmE=
+			</data>
+		</dict>
+		<key>FATMImagePickerController.bundle/Root.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jOhqEUF1/xyY+fuswiWT+ELC3dI=
+			</data>
+			<key>hash2</key>
+			<data>
+			m26DmegPkB5jwUJkVEtLlObYALX8He100Ny0+NNJg/g=
+			</data>
+		</dict>
+		<key>FATMImagePickerController.bundle/VideoSendIcon@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			w2Y6klkQgHjIYsEZUfBZs3Yt+/0=
+			</data>
+			<key>hash2</key>
+			<data>
+			79aZK+4fli3Lb+aQ6bLKa6kFIv63uO6b6OwDDRqEKeo=
+			</data>
+		</dict>
+		<key>FATMImagePickerController.bundle/en.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			novGefDyl9FiTbCwHdjSuE+KVpg=
+			</data>
+			<key>hash2</key>
+			<data>
+			mJZ00n0vl4FwrAtI1xf2UfBsuiNGp3sFj8xY3RYGFF8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>FATMImagePickerController.bundle/navi_back@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			M1rsPoGnPAmXKZoRtK1wzcseNYI=
+			</data>
+			<key>hash2</key>
+			<data>
+			1NcM2CvH/5ZK4mtvqpo5QEYVaosOfwB4Xm5A4XNfHsQ=
+			</data>
+		</dict>
+		<key>FATMImagePickerController.bundle/photo_def_photoPickerVc@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TowaKFKzU3fYhK+It4oKIhuCpk0=
+			</data>
+			<key>hash2</key>
+			<data>
+			MtEKha2kp7hKoO2wSA7YGxzTBDlW1Yeg1yI0MrLoiWs=
+			</data>
+		</dict>
+		<key>FATMImagePickerController.bundle/photo_def_previewVc@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TowaKFKzU3fYhK+It4oKIhuCpk0=
+			</data>
+			<key>hash2</key>
+			<data>
+			MtEKha2kp7hKoO2wSA7YGxzTBDlW1Yeg1yI0MrLoiWs=
+			</data>
+		</dict>
+		<key>FATMImagePickerController.bundle/photo_number_icon@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nKZxsZi268vELJiTN32F7cHAkY8=
+			</data>
+			<key>hash2</key>
+			<data>
+			vA84N0t2q9GzYYF3yf1m6Fn44ixKZosJjOegAZsHOdk=
+			</data>
+		</dict>
+		<key>FATMImagePickerController.bundle/photo_original_def@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uaNzK2Fysh8bWaGPqXKapGGUX9g=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ssgn02Ijdm64+O1bE25CQCGfSWqoeMZGBoBJQHYLzS8=
+			</data>
+		</dict>
+		<key>FATMImagePickerController.bundle/photo_original_sel@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qqo+wstTy+/qO7CID91ZNrhq/Us=
+			</data>
+			<key>hash2</key>
+			<data>
+			MLhfh5RPkkmmMffAyV55azOoDgepKoCK2fXnavGMZNM=
+			</data>
+		</dict>
+		<key>FATMImagePickerController.bundle/photo_sel_photoPickerVc@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1maHDZQyFhPSgDG5iqKrPz10BQE=
+			</data>
+			<key>hash2</key>
+			<data>
+			s6RfkvNkaQeeKIEe9rw2kIJjoUdN7J7xt81ONMfSLAI=
+			</data>
+		</dict>
+		<key>FATMImagePickerController.bundle/photo_sel_previewVc@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YGb26ZPCkiAL0gm2EPZvp52S3h4=
+			</data>
+			<key>hash2</key>
+			<data>
+			b4LvW24gDlJWARWOh/M30GpmslkX+8hVxCMRtEj6Z0U=
+			</data>
+		</dict>
+		<key>FATMImagePickerController.bundle/preview_number_icon@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nKZxsZi268vELJiTN32F7cHAkY8=
+			</data>
+			<key>hash2</key>
+			<data>
+			vA84N0t2q9GzYYF3yf1m6Fn44ixKZosJjOegAZsHOdk=
+			</data>
+		</dict>
+		<key>FATMImagePickerController.bundle/preview_original_def@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GVzy25+bRYA1MrAG22+vkO35VRo=
+			</data>
+			<key>hash2</key>
+			<data>
+			Xrv0NGLE9a4gFpLK82tB0r4HnaSv3CP0TeJfwkwjRw8=
+			</data>
+		</dict>
+		<key>FATMImagePickerController.bundle/takePicture80@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FRMjStf508fLB8xVTzk1PXoASmw=
+			</data>
+			<key>hash2</key>
+			<data>
+			Uv8RFUDbC4a97vuDrN1kYh6ZX5yDYYkhOGgBgInVbnc=
+			</data>
+		</dict>
+		<key>FATMImagePickerController.bundle/takePicture@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			I0tOOwrDT9Q2o3Jd0OeSTb4bPAE=
+			</data>
+			<key>hash2</key>
+			<data>
+			djfY78DEKJ8HhXY8//sW7zJT97v7gzXHMl8M/LGncJk=
+			</data>
+		</dict>
+		<key>FATMImagePickerController.bundle/vi.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			StuVjQObz/T1qp+Jav0LDJKiwro=
+			</data>
+			<key>hash2</key>
+			<data>
+			bm7LXIIymWhTTaWx2H52ww7TL5tC6SabQI0J2rFQdmw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>FATMImagePickerController.bundle/zh-Hans.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			I6iWlZNc41F1sol2gU5Oa8S0/s4=
+			</data>
+			<key>hash2</key>
+			<data>
+			/C21mDzjF4t5QPxBgfjRQKgyssoy9h3CrJgG3TOQdqg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>FATMImagePickerController.bundle/zh-Hant.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			i80sQg3gsa0HPHenlDdZJRNXF74=
+			</data>
+			<key>hash2</key>
+			<data>
+			X/3M9stRwnFitVoFvpFFfPcogvkXfLHHwFVT+OwmVsY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>FinApplet.bundle/apha.plist</key>
 		<dict>
 			<key>hash</key>
@@ -946,11 +1174,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qs7XNvJGbZZM8JtdT8N44tGzJ4I=
+			hX8UixVAFEeroH7YNIVcJtGtMxQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			vtHobl6wCpPPryNCvRwbhCTX7ioblJZORVt5zX0KZDY=
+			3dhTwy8keYa5htme55j/InqaCJrrxFhuGs1johVD0CU=
 			</data>
 		</dict>
 		<key>Headers/FATAppletInfo.h</key>
@@ -979,33 +1207,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iRaetKHRorU6Sd7H5F9Wh6HLWaQ=
+			mo2iYHNG2ZgohJ39v98ftvXhWl8=
 			</data>
 			<key>hash2</key>
 			<data>
-			GJh1mspW0DAk1PScbTRhe8B5P/V+oD/AfNaPX6oFha8=
+			gPhxeY1drdVUOae2N5iT1XVOc/gvhoV0X2oG2b4reSk=
 			</data>
 		</dict>
 		<key>Headers/FATConfig.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1oHgUSWJgJHI+n24xOU6ZQ3kzg4=
+			Uf4LvW2dHUly9KCP2VcqzWt4dPk=
 			</data>
 			<key>hash2</key>
 			<data>
-			LEYLm7/PBYV36IcrDITNdAJ6oYxGmxAiJw5z4eC1HrQ=
+			LpKC+MsEntmaNlOw+aF9JPKEJ4s1t1g9FfjFar1hYKo=
 			</data>
 		</dict>
 		<key>Headers/FATConstant.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hFfdOcj6OENu6b6KnAubuDH6ovU=
+			Z+9ZJeYsTVGQC+LHJOZn/SmDat8=
 			</data>
 			<key>hash2</key>
 			<data>
-			rWmPMz9hkuWX9OsfYhXLWiY7mNLLCSgnz4C5F4K1Qd0=
+			MYKkHxRSOPy62dTpMbrmzLL8EXJTRFkuPz1sSPzGVd8=
 			</data>
 		</dict>
 		<key>Headers/FinApplet.h</key>
@@ -1029,234 +1257,6 @@
 			<data>
 			7JOdSvk7WBE541A5FvDN8VcCMiDA7vs6/+KZEcZB3iU=
 			</data>
-		</dict>
-		<key>TZImagePickerController.bundle/MMVideoPreviewPlay@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			a0njhOHaqgjMkmBpYWYxnMlnDyU=
-			</data>
-			<key>hash2</key>
-			<data>
-			rpJCY4irJtYw12iyifl9WFsAVCDUZ60jE77ubgcOV/4=
-			</data>
-		</dict>
-		<key>TZImagePickerController.bundle/MMVideoPreviewPlayHL@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ckX1OIPbendWtIY9d+j+kbbo9Vw=
-			</data>
-			<key>hash2</key>
-			<data>
-			eQMhR9TDkW66Ej6Wzh3vt0DqefvrcweFEnTJVgx+pmE=
-			</data>
-		</dict>
-		<key>TZImagePickerController.bundle/Root.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			jOhqEUF1/xyY+fuswiWT+ELC3dI=
-			</data>
-			<key>hash2</key>
-			<data>
-			m26DmegPkB5jwUJkVEtLlObYALX8He100Ny0+NNJg/g=
-			</data>
-		</dict>
-		<key>TZImagePickerController.bundle/VideoSendIcon@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			w2Y6klkQgHjIYsEZUfBZs3Yt+/0=
-			</data>
-			<key>hash2</key>
-			<data>
-			79aZK+4fli3Lb+aQ6bLKa6kFIv63uO6b6OwDDRqEKeo=
-			</data>
-		</dict>
-		<key>TZImagePickerController.bundle/en.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			novGefDyl9FiTbCwHdjSuE+KVpg=
-			</data>
-			<key>hash2</key>
-			<data>
-			mJZ00n0vl4FwrAtI1xf2UfBsuiNGp3sFj8xY3RYGFF8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>TZImagePickerController.bundle/navi_back@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			M1rsPoGnPAmXKZoRtK1wzcseNYI=
-			</data>
-			<key>hash2</key>
-			<data>
-			1NcM2CvH/5ZK4mtvqpo5QEYVaosOfwB4Xm5A4XNfHsQ=
-			</data>
-		</dict>
-		<key>TZImagePickerController.bundle/photo_def_photoPickerVc@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			TowaKFKzU3fYhK+It4oKIhuCpk0=
-			</data>
-			<key>hash2</key>
-			<data>
-			MtEKha2kp7hKoO2wSA7YGxzTBDlW1Yeg1yI0MrLoiWs=
-			</data>
-		</dict>
-		<key>TZImagePickerController.bundle/photo_def_previewVc@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			TowaKFKzU3fYhK+It4oKIhuCpk0=
-			</data>
-			<key>hash2</key>
-			<data>
-			MtEKha2kp7hKoO2wSA7YGxzTBDlW1Yeg1yI0MrLoiWs=
-			</data>
-		</dict>
-		<key>TZImagePickerController.bundle/photo_number_icon@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			nKZxsZi268vELJiTN32F7cHAkY8=
-			</data>
-			<key>hash2</key>
-			<data>
-			vA84N0t2q9GzYYF3yf1m6Fn44ixKZosJjOegAZsHOdk=
-			</data>
-		</dict>
-		<key>TZImagePickerController.bundle/photo_original_def@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			uaNzK2Fysh8bWaGPqXKapGGUX9g=
-			</data>
-			<key>hash2</key>
-			<data>
-			Ssgn02Ijdm64+O1bE25CQCGfSWqoeMZGBoBJQHYLzS8=
-			</data>
-		</dict>
-		<key>TZImagePickerController.bundle/photo_original_sel@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			qqo+wstTy+/qO7CID91ZNrhq/Us=
-			</data>
-			<key>hash2</key>
-			<data>
-			MLhfh5RPkkmmMffAyV55azOoDgepKoCK2fXnavGMZNM=
-			</data>
-		</dict>
-		<key>TZImagePickerController.bundle/photo_sel_photoPickerVc@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			1maHDZQyFhPSgDG5iqKrPz10BQE=
-			</data>
-			<key>hash2</key>
-			<data>
-			s6RfkvNkaQeeKIEe9rw2kIJjoUdN7J7xt81ONMfSLAI=
-			</data>
-		</dict>
-		<key>TZImagePickerController.bundle/photo_sel_previewVc@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			YGb26ZPCkiAL0gm2EPZvp52S3h4=
-			</data>
-			<key>hash2</key>
-			<data>
-			b4LvW24gDlJWARWOh/M30GpmslkX+8hVxCMRtEj6Z0U=
-			</data>
-		</dict>
-		<key>TZImagePickerController.bundle/preview_number_icon@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			nKZxsZi268vELJiTN32F7cHAkY8=
-			</data>
-			<key>hash2</key>
-			<data>
-			vA84N0t2q9GzYYF3yf1m6Fn44ixKZosJjOegAZsHOdk=
-			</data>
-		</dict>
-		<key>TZImagePickerController.bundle/preview_original_def@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			GVzy25+bRYA1MrAG22+vkO35VRo=
-			</data>
-			<key>hash2</key>
-			<data>
-			Xrv0NGLE9a4gFpLK82tB0r4HnaSv3CP0TeJfwkwjRw8=
-			</data>
-		</dict>
-		<key>TZImagePickerController.bundle/takePicture80@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			FRMjStf508fLB8xVTzk1PXoASmw=
-			</data>
-			<key>hash2</key>
-			<data>
-			Uv8RFUDbC4a97vuDrN1kYh6ZX5yDYYkhOGgBgInVbnc=
-			</data>
-		</dict>
-		<key>TZImagePickerController.bundle/takePicture@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			I0tOOwrDT9Q2o3Jd0OeSTb4bPAE=
-			</data>
-			<key>hash2</key>
-			<data>
-			djfY78DEKJ8HhXY8//sW7zJT97v7gzXHMl8M/LGncJk=
-			</data>
-		</dict>
-		<key>TZImagePickerController.bundle/vi.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			StuVjQObz/T1qp+Jav0LDJKiwro=
-			</data>
-			<key>hash2</key>
-			<data>
-			bm7LXIIymWhTTaWx2H52ww7TL5tC6SabQI0J2rFQdmw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>TZImagePickerController.bundle/zh-Hans.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			I6iWlZNc41F1sol2gU5Oa8S0/s4=
-			</data>
-			<key>hash2</key>
-			<data>
-			/C21mDzjF4t5QPxBgfjRQKgyssoy9h3CrJgG3TOQdqg=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>TZImagePickerController.bundle/zh-Hant.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			i80sQg3gsa0HPHenlDdZJRNXF74=
-			</data>
-			<key>hash2</key>
-			<data>
-			X/3M9stRwnFitVoFvpFFfPcogvkXfLHHwFVT+OwmVsY=
-			</data>
-			<key>optional</key>
-			<true/>
 		</dict>
 		<key>not_domain.html</key>
 		<dict>
