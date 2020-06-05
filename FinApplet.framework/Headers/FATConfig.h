@@ -59,6 +59,11 @@ apm 统计的扩展信息
 /// 是否隐藏回到首页菜单
 @property (nonatomic, assign) BOOL hideBackToHome;
 
+/** 是否自适应暗黑模式。
+ 如果设置为YES，则更多页面、关于等原生页面会随着手机切换暗黑，也自动调整为暗黑模式
+ */
+@property (nonatomic, assign) BOOL autoAdaptDarkMode;
+
 #pragma mark - method
 /// 创建config对象
 /// @param appSecret appSecret，也就是SDK Secret
