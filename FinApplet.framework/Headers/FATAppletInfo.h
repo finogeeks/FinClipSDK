@@ -45,6 +45,12 @@
 /// 小程序主体信息（机构名称）
 @property (nonatomic, copy) NSString *groupName;
 
+/// 小程序是否正在灰度
+@property (nonatomic, strong) NSNumber *isGrayRelease;
+
+/// 小程序版本索引
+@property (nonatomic, strong) NSNumber *sequence;
+
 /// 小程序是否已安装 （其实类似收藏）
 @property (nonatomic, assign) BOOL installed;
 
