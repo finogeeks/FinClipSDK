@@ -64,6 +64,12 @@ apm 统计的扩展信息
  */
 @property (nonatomic, assign) BOOL autoAdaptDarkMode;
 
+/** 是否开启Crash防崩溃，默认为NO。
+ 如果开启，可以防止如下类型的崩溃：UnrecognizedSelector、KVO、Notification、Timer、Container(数组越界，字典插入nil等)、String (越界、nil等)
+ 如果在开发阶段，建议关闭该属性，否则开发时不便于及时发现代码中的崩溃问题。
+*/
+@property (nonatomic, assign) BOOL startCrashProtection;
+
 #pragma mark - method
 /// 创建config对象
 /// @param appSecret appSecret，也就是SDK Secret

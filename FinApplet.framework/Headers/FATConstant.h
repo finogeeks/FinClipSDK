@@ -25,6 +25,18 @@ typedef NS_ENUM(NSUInteger, FATApiCryptType) {
     FATApiCryptTypeSM,      // 国密MD5
 };
 
+typedef NS_ENUM(NSUInteger, FATCrashProtectionType) {
+    FATCrashProtectionTypeNone = 0,
+    FATCrashProtectionTypeUnrecognizedSelector = 1 << 1,
+    FATCrashProtectionTypeKVOCrash = 1 << 2,
+    FATCrashProtectionTypeTimerCrash = 1 << 3,
+    FATCrashProtectionTypeNotificationCrash = 1 << 4,
+    FATCrashProtectionTypeContainerCrash = 1 << 5,
+    FATCrashProtectionTypeStringCrash = 1 << 6,
+    
+    FATCrashProtectionTypeAll = FATCrashProtectionTypeUnrecognizedSelector | FATCrashProtectionTypeKVOCrash | FATCrashProtectionTypeTimerCrash | FATCrashProtectionTypeNotificationCrash | FATCrashProtectionTypeContainerCrash | FATCrashProtectionTypeStringCrash
+};
+
 /**
  扩展API处理后的回调
  
