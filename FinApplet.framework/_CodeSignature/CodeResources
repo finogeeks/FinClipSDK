@@ -6,11 +6,11 @@
 	<dict>
 		<key>FATMImagePickerController.bundle/MMVideoPreviewPlay@2x.png</key>
 		<data>
-		a0njhOHaqgjMkmBpYWYxnMlnDyU=
+		nvireIIXZuqdE+uJXGeFVZMWkxI=
 		</data>
 		<key>FATMImagePickerController.bundle/MMVideoPreviewPlayHL@2x.png</key>
 		<data>
-		ckX1OIPbendWtIY9d+j+kbbo9Vw=
+		ZhRGqKFUXh3Wfmi87NPiDaBAGqI=
 		</data>
 		<key>FATMImagePickerController.bundle/Root.plist</key>
 		<data>
@@ -47,7 +47,7 @@
 		</data>
 		<key>FATMImagePickerController.bundle/photo_original_def@2x.png</key>
 		<data>
-		uaNzK2Fysh8bWaGPqXKapGGUX9g=
+		p3/I+zRt0i1lOQeQm1oX0roeYWc=
 		</data>
 		<key>FATMImagePickerController.bundle/photo_original_sel@2x.png</key>
 		<data>
@@ -71,11 +71,11 @@
 		</data>
 		<key>FATMImagePickerController.bundle/takePicture80@2x.png</key>
 		<data>
-		FRMjStf508fLB8xVTzk1PXoASmw=
+		tuzExWjh4QA6g8pE4S+FwocLua0=
 		</data>
 		<key>FATMImagePickerController.bundle/takePicture@2x.png</key>
 		<data>
-		I0tOOwrDT9Q2o3Jd0OeSTb4bPAE=
+		itiCYwSljORnUBCSO4Wqg7fk9lU=
 		</data>
 		<key>FATMImagePickerController.bundle/vi.lproj/Localizable.strings</key>
 		<dict>
@@ -250,7 +250,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		f1uqUEvyA3AN0nSHnyXcqh9xwjE=
+		fmBOBPo/WcKxbg6+OaLWBjfocqQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -267,22 +267,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			a0njhOHaqgjMkmBpYWYxnMlnDyU=
+			nvireIIXZuqdE+uJXGeFVZMWkxI=
 			</data>
 			<key>hash2</key>
 			<data>
-			rpJCY4irJtYw12iyifl9WFsAVCDUZ60jE77ubgcOV/4=
+			OIBiieQAvUl2/4ACBer8Pylh7iM3L+gM7OMLzoKP9ZI=
 			</data>
 		</dict>
 		<key>FATMImagePickerController.bundle/MMVideoPreviewPlayHL@2x.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ckX1OIPbendWtIY9d+j+kbbo9Vw=
+			ZhRGqKFUXh3Wfmi87NPiDaBAGqI=
 			</data>
 			<key>hash2</key>
 			<data>
-			eQMhR9TDkW66Ej6Wzh3vt0DqefvrcweFEnTJVgx+pmE=
+			OQW46plKrbQlxAEa5SkfHhNZU0/lKxSR1nLgxcupIIs=
 			</data>
 		</dict>
 		<key>FATMImagePickerController.bundle/Root.plist</key>
@@ -368,11 +368,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uaNzK2Fysh8bWaGPqXKapGGUX9g=
+			p3/I+zRt0i1lOQeQm1oX0roeYWc=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ssgn02Ijdm64+O1bE25CQCGfSWqoeMZGBoBJQHYLzS8=
+			ghpFBJZycXoAwqvS5ioXqdNvZacMpHl3Ui3fZwPtnNU=
 			</data>
 		</dict>
 		<key>FATMImagePickerController.bundle/photo_original_sel@2x.png</key>
@@ -434,22 +434,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FRMjStf508fLB8xVTzk1PXoASmw=
+			tuzExWjh4QA6g8pE4S+FwocLua0=
 			</data>
 			<key>hash2</key>
 			<data>
-			Uv8RFUDbC4a97vuDrN1kYh6ZX5yDYYkhOGgBgInVbnc=
+			/xvs3pxlrF6U1OTHBrSO8cDoqysJB8Fs2XigigHUYak=
 			</data>
 		</dict>
 		<key>FATMImagePickerController.bundle/takePicture@2x.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			I0tOOwrDT9Q2o3Jd0OeSTb4bPAE=
+			itiCYwSljORnUBCSO4Wqg7fk9lU=
 			</data>
 			<key>hash2</key>
 			<data>
-			djfY78DEKJ8HhXY8//sW7zJT97v7gzXHMl8M/LGncJk=
+			euNbkXbNbUmqKH1jjFNPaVsTIWklzS8jz+n6a4s7qYg=
 			</data>
 		</dict>
 		<key>FATMImagePickerController.bundle/vi.lproj/Localizable.strings</key>
