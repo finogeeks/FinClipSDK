@@ -49,12 +49,6 @@ appId，也就是 SDK secret，必填
 @property (nonatomic, assign) FATApiCryptType cryptType;
 
 /**
-是否不让SDK申请权限
-如果设置为YES，则SDK内使用权限的api，不会主动申请权限
-*/
-@property (nonatomic, assign) BOOL disableAuthorize;
-
-/**
 apm 统计的扩展信息
 */
 @property (nonatomic, strong) NSDictionary *apmExtension;
