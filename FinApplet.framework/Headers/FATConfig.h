@@ -59,16 +59,16 @@ apm 统计的扩展信息
 */
 @property (nonatomic, strong) NSDictionary *apmExtension;
 
-/// 是否隐藏小程序 更多中的反馈与投诉的菜单
-@property (nonatomic, assign) BOOL hideFeedbackMenu;
-
-/// 是否隐藏回到首页菜单
-@property (nonatomic, assign) BOOL hideBackToHome;
-
-/** 是否自适应暗黑模式。
- 如果设置为YES，则更多页面、关于等原生页面会随着手机切换暗黑，也自动调整为暗黑模式
- */
-@property (nonatomic, assign) BOOL autoAdaptDarkMode;
+///// 是否隐藏小程序 更多中的反馈与投诉的菜单
+//@property (nonatomic, assign) BOOL hideFeedbackMenu;
+//
+///// 是否隐藏回到首页菜单
+//@property (nonatomic, assign) BOOL hideBackToHome;
+//
+///** 是否自适应暗黑模式。
+// 如果设置为YES，则更多页面、关于等原生页面会随着手机切换暗黑，也自动调整为暗黑模式
+// */
+//@property (nonatomic, assign) BOOL autoAdaptDarkMode;
 
 /** 是否开启Crash防崩溃，默认为NO。
  如果开启，可以防止如下类型的崩溃：UnrecognizedSelector、KVO、Notification、Timer、Container(数组越界，字典插入nil等)、String (越界、nil等)

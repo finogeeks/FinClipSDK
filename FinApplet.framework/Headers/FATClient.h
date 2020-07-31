@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #import "FATConfig.h"
+#import "FATUIConfig.h"
 #import "FATConstant.h"
 #import "FATAppletInfo.h"
 #import "FATAppletDelegate.h"
@@ -16,6 +17,9 @@
 @interface FATClient : NSObject
 
 @property (nonatomic, strong, readonly) FATConfig *config;
+
+/// UI控件的样式配置
+@property (nonatomic, strong, readonly) FATUIConfig *uiConfig;
 
 @property (nonatomic, copy, readonly) NSString *version;
 
@@ -26,6 +30,8 @@
 + (instancetype)sharedClient;
 
 - (BOOL)initWithConfig:(FATConfig *)config error:(NSError **)error;
+
+- (BOOL)initWithConfig:(FATConfig *)config uiConfig:(FATUIConfig *)uiConfig error:(NSError **)error;
 
 /**
  清空内存中缓存的小程序数据
