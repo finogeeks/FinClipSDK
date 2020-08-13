@@ -234,7 +234,7 @@
 		</data>
 		<key>Headers/FATClient.h</key>
 		<data>
-		W1SL4iKarKm2sPKFPVlra6sSVcw=
+		BfxqrL9Tk8E8wwLAODAxXDlzRIo=
 		</data>
 		<key>Headers/FATConfig.h</key>
 		<data>
@@ -254,7 +254,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		bDUPdGTs0nnpOCpNw9VnlwM5zws=
+		0zqyMkgpY915oxXzJiCwEMK3Vzo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -851,11 +851,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			W1SL4iKarKm2sPKFPVlra6sSVcw=
+			BfxqrL9Tk8E8wwLAODAxXDlzRIo=
 			</data>
 			<key>hash2</key>
 			<data>
-			YEHiJKuDEPmBY+NaEk+Vp7Rdv6dBUlHYKM4d6ggUtts=
+			qUlb0g8KVqqK22gNtTTjnSMB2EZRRDqppAizLukrn18=
 			</data>
 		</dict>
 		<key>Headers/FATConfig.h</key>
