@@ -160,7 +160,7 @@
               startParams:(NSDictionary *)startParams
    InParentViewController:(UIViewController *)parentVC
           transitionStyle:(FATTranstionStyle)transitionStyle
-                 animated:animated
+                 animated:(BOOL)animated
                completion:(void (^)(BOOL result, NSError *error))completion;
 
 /// 当前正在使用的小程序
