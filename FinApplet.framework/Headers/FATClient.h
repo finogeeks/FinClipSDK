@@ -45,10 +45,6 @@
 /// @param URL 具体的URL路由
 - (BOOL)handleOpenURL:(NSURL *)URL;
 
-/// 返回值为UIInterfaceOrientationMask的Number对象。
-/// 如果不是小程序SDK中的控制器，则返回nil。
-- (NSNumber *)supportedInterfaceOrientations;
-
 #pragma mark - start applet api
 /**
  打开mainBundle中的小程序，with transitionStyle
@@ -65,6 +61,7 @@
  };
  @param parentVC 在哪个页面的基础上弹出小程序，❗️不能为空
  @param transitionStyle 弹出动画方式
+ @param animated 是否展示动画
  @param completion 完成的回调，失败时会返回error信息
  */
 - (void)startLocalApplet:(NSString *)appletId
@@ -73,6 +70,7 @@
              startParams:(NSDictionary *)startParams
   InParentViewController:(UIViewController *)parentVC
          transitionStyle:(FATTranstionStyle)transitionStyle
+                animated:(BOOL)animated
               completion:(void (^)(BOOL result, NSError *error))completion;
 
 /**
@@ -128,6 +126,7 @@
  };
  @param parentVC 在哪个页面的基础上弹出小程序，❗️不能为空
  @param transitionStyle 弹出动画方式
+ @param animated 是否展示动画
  @param completion 完成的回调，失败时会返回error信息
  @param closeCompletion 关闭小程序的回调
  */
@@ -135,6 +134,7 @@
               startParams:(NSDictionary *)startParams
    InParentViewController:(UIViewController *)parentVC
           transitionStyle:(FATTranstionStyle)transitionStyle
+                 animated:(BOOL)animated
                completion:(void (^)(BOOL result, NSError *error))completion
           closeCompletion:(dispatch_block_t)closeCompletion;
 
@@ -152,6 +152,7 @@
  };
  @param parentVC 在哪个页面的基础上弹出小程序，❗️不能为空
  @param transitionStyle 弹出动画方式
+ @param animated 是否展示动画
  @param completion 完成的回调，失败时会返回error信息
  */
 - (void)startRemoteApplet:(NSString *)appletId
@@ -159,6 +160,7 @@
               startParams:(NSDictionary *)startParams
    InParentViewController:(UIViewController *)parentVC
           transitionStyle:(FATTranstionStyle)transitionStyle
+                 animated:animated
                completion:(void (^)(BOOL result, NSError *error))completion;
 
 /// 当前正在使用的小程序
