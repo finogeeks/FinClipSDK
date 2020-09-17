@@ -45,6 +45,10 @@
 /// @param URL 具体的URL路由
 - (BOOL)handleOpenURL:(NSURL *)URL;
 
+/// 返回值为UIInterfaceOrientationMask的Number对象。
+/// 如果不是小程序SDK中的控制器，则返回nil。
+- (NSNumber *)supportedInterfaceOrientations;
+
 #pragma mark - start applet api
 /**
  打开mainBundle中的小程序，with transitionStyle
