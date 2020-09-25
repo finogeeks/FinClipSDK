@@ -6,12 +6,14 @@
 //  Copyright © 2020 finogeeks. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface FATUIConfig : NSObject
 
 /// 导航栏的标题样式，目前支持了font
 @property (nonatomic, strong) NSDictionary<NSAttributedStringKey, id> *navigationTitleTextAttributes;
+
+@property (nonatomic, strong) UIColor *progressBarColor;
 
 /// 是否隐藏小程序 更多中的反馈与投诉的菜单
 @property (nonatomic, assign) BOOL hideFeedbackMenu;

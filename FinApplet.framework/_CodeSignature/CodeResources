@@ -246,7 +246,7 @@
 		</data>
 		<key>Headers/FATUIConfig.h</key>
 		<data>
-		cMv7PqC4Dbz1BXeDYfiT1yu3rVw=
+		xHo06odykXrBJyQXoW1eWH+E18U=
 		</data>
 		<key>Headers/FinApplet.h</key>
 		<data>
@@ -254,7 +254,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		D21ep1WszWA/ONMcwABKyvcvd3U=
+		3yZALEJJj+noPxLDK7eazxiNEMI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -884,11 +884,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cMv7PqC4Dbz1BXeDYfiT1yu3rVw=
+			xHo06odykXrBJyQXoW1eWH+E18U=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ue9DZTKiTDqdIGoqwjcxKjfomuXUTKXWM4xmRBLn6AM=
+			qC2RjxrJGXH9Ps8i8/LN2syWg9dXKpLvWDlW4RRREdg=
 			</data>
 		</dict>
 		<key>Headers/FinApplet.h</key>
