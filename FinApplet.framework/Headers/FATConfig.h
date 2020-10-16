@@ -43,6 +43,11 @@ appId，也就是 SDK secret，必填
  */
 @property (nonatomic, copy) NSString *apiPrefix;
 
+/**
+SDK指纹，证联服务器时，必填
+*/
+@property (nonatomic, copy) NSString *fingerprint;
+
 @property (nonatomic, strong) NSDictionary *theme;
 
 /// 小程序SDK中的api加密，默认为MD5
