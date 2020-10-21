@@ -38,6 +38,11 @@
  */
 - (void)clearMemoryCache;
 
+/**
+删除内存中的某个小程序
+*/
+- (void)clearMemeryApplet:(NSString *)appletId;
+
 ///  删除本地缓存的小程序
 - (void)clearLocalApplets;
 
@@ -176,6 +181,12 @@
 @param animated 是否显示动画
 */
 - (void)closeCurrentApplet:(BOOL)animated;
+
+/**
+关闭打开的指定小程序
+@param animated 是否显示动画
+*/
+- (void)closeApplet:(NSString *)appletId animated:(BOOL)animated;
 
 /**
 关闭当前打开的所有小程序
