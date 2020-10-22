@@ -238,7 +238,7 @@
 		</data>
 		<key>Headers/FATConfig.h</key>
 		<data>
-		4gLF2KLiuVhYJoKZ/Hkwsyzn6jM=
+		WXop+VG7QA2U86Sb4xtpa0ifdLk=
 		</data>
 		<key>Headers/FATConstant.h</key>
 		<data>
@@ -246,7 +246,7 @@
 		</data>
 		<key>Headers/FATUIConfig.h</key>
 		<data>
-		xHo06odykXrBJyQXoW1eWH+E18U=
+		ENYcHUpvqAVnXK1Sl9zvM/bpwac=
 		</data>
 		<key>Headers/FinApplet.h</key>
 		<data>
@@ -254,7 +254,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		6CXF+jxm4nmpFo10TnVvwsyWWtY=
+		gNQ7JjcayQDLvxfdZVeSLKDhoUM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -866,11 +866,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4gLF2KLiuVhYJoKZ/Hkwsyzn6jM=
+			WXop+VG7QA2U86Sb4xtpa0ifdLk=
 			</data>
 			<key>hash2</key>
 			<data>
-			Dkgz96ZwraYQmBoqiMXVNECs6NbR8AnffoAEzlEodp4=
+			Zb29EP6PCf1W5MTpDQQ12anG+hjZpaVh3igxnxMR4a4=
 			</data>
 		</dict>
 		<key>Headers/FATConstant.h</key>
@@ -888,11 +888,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xHo06odykXrBJyQXoW1eWH+E18U=
+			ENYcHUpvqAVnXK1Sl9zvM/bpwac=
 			</data>
 			<key>hash2</key>
 			<data>
-			qC2RjxrJGXH9Ps8i8/LN2syWg9dXKpLvWDlW4RRREdg=
+			N1CE7CMveMZDl+z5ZgZSfAqf3V8WpFoZfuMMSAw0gEs=
 			</data>
 		</dict>
 		<key>Headers/FinApplet.h</key>

@@ -26,5 +26,9 @@
  */
 @property (nonatomic, assign) BOOL autoAdaptDarkMode;
 
+/** 要拼接的userAgent字符串。
+*/
+@property (nonatomic, copy) NSString *appendingCustomUserAgent;
+
 @end
 
