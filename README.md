@@ -1,1 +1,1 @@
-# MOPLibrary
+# FinClipSDK-iOS
