@@ -23,6 +23,8 @@
 
 @property (nonatomic, copy, readonly) NSString *version;
 
+@property (nonatomic, assign, readonly) BOOL inited;
+
 @property (nonatomic, assign) BOOL enableLog;
 
 @property (nonatomic, weak) id<FATAppletDelegate> delegate;
@@ -160,6 +162,29 @@
  @"scene" : @"1001"
  };
  @param parentVC 在哪个页面的基础上弹出小程序，❗️不能为空
+ @param animated 是否展示动画
+ @param completion 完成的回调，失败时会返回error信息
+ */
+- (void)startRemoteApplet:(NSString *)appletId
+                 sequence:(NSNumber *)sequence
+              startParams:(NSDictionary *)startParams
+   InParentViewController:(UIViewController *)parentVC
+                 animated:(BOOL)animated
+               completion:(void (^)(BOOL result, NSError *error))completion;
+
+/**
+ 打开服务器上的小程序，带提交序列、动画参数
+
+ @param appletId 小程序的appId, 不能为空
+ @param sequence 提交审核的序列
+ @param startParams 启动小程序时的参数，可为nil。目前支持的key只有path、query、scene。
+ 示例:
+ @{
+ @"path":@"/pages/index/index",
+ @"query":@"key1=value1&key2=value2",
+ @"scene" : @"1001"
+ };
+ @param parentVC 在哪个页面的基础上弹出小程序，❗️不能为空
  @param transitionStyle 弹出动画方式
  @param animated 是否展示动画
  @param completion 完成的回调，失败时会返回error信息
@@ -227,15 +252,9 @@
 /// 原生调用HTML中的JS函数
 /// @param eventName 函数名
 /// @param paramString 函数的参数字典转成的json
-/// @param pageId webView ID
+/// @param pageId webView ID，可不传，默认调用最顶层页面里H5的函数
 /// @param hanler 调用结果回调
 - (void)fat_callWebApi:(NSString *)eventName paramString:(NSString *)paramString pageId:(NSNumber *)pageId handler:(void (^)(id result, NSError *error))hanler;
-
-/// 获取webView
-/// @param frame frame
-/// @param URL 网页的URL
-/// @param appletId 小程序ID
-- (UIView *)webViewWithFrame:(CGRect)frame URL:(NSURL *)URL appletId:(NSString *)appletId;
 
 #pragma mark - tool api
 /**

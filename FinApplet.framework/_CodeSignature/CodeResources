@@ -234,7 +234,7 @@
 		</data>
 		<key>Headers/FATClient.h</key>
 		<data>
-		2Bo2GoyTDYOf3LnOnx0AAuN6//Q=
+		u7tgI9XU1uzcz5/6Q73b8qNJbVk=
 		</data>
 		<key>Headers/FATConfig.h</key>
 		<data>
@@ -248,13 +248,21 @@
 		<data>
 		ENYcHUpvqAVnXK1Sl9zvM/bpwac=
 		</data>
+		<key>Headers/FATWeakScriptMessageDelegate.h</key>
+		<data>
+		qF1csMeTs8mu8vxVnHwd/4fzajo=
+		</data>
+		<key>Headers/FATWebExtension.h</key>
+		<data>
+		KD94ISxpATJw73FzlQ6aEgWAGPY=
+		</data>
 		<key>Headers/FinApplet.h</key>
 		<data>
-		mZ1PbeNOL2QvlzdNuTqoHibcb5E=
+		SeNKoozDMA+wUxI7LzDtV4g0Bp0=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		yejAmJLYv8ACGkmANaCCjku0dlY=
+		QEBZiXEA4m8hl2zWfjv27HxOTS0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -855,11 +863,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2Bo2GoyTDYOf3LnOnx0AAuN6//Q=
+			u7tgI9XU1uzcz5/6Q73b8qNJbVk=
 			</data>
 			<key>hash2</key>
 			<data>
-			JiZAZr1yQ28DGuOhNNwvkGi8F6HJst0qKbTRvmmPG6I=
+			skAgE1tUNJWG1UslwhfdOduo/jWEXRaS82c1drP5yfg=
 			</data>
 		</dict>
 		<key>Headers/FATConfig.h</key>
@@ -895,15 +903,37 @@
 			N1CE7CMveMZDl+z5ZgZSfAqf3V8WpFoZfuMMSAw0gEs=
 			</data>
 		</dict>
+		<key>Headers/FATWeakScriptMessageDelegate.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qF1csMeTs8mu8vxVnHwd/4fzajo=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ka4AloEpkG/MPFhzPO1QvFNSe8KARpwJF/quvqMmoC8=
+			</data>
+		</dict>
+		<key>Headers/FATWebExtension.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KD94ISxpATJw73FzlQ6aEgWAGPY=
+			</data>
+			<key>hash2</key>
+			<data>
+			K7Lr9zpW4YQ5kzyz3TlN7EkYp5CzqDu3PVE5GiLBF2M=
+			</data>
+		</dict>
 		<key>Headers/FinApplet.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mZ1PbeNOL2QvlzdNuTqoHibcb5E=
+			SeNKoozDMA+wUxI7LzDtV4g0Bp0=
 			</data>
 			<key>hash2</key>
 			<data>
-			Hrd4Ob0i5xFizf1pChJ+Xt6PKcdSMQr00Ac7Nk3VPa8=
+			8hGmZzXg/Y6VUBbY8qJcPTk9pVtNJZfoCVH80b5ZZ+o=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

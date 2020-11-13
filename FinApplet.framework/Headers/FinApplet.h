@@ -12,5 +12,7 @@
 #import "FATConfig.h"
 #import "FATAppletInfo.h"
 #import "FATConstant.h"
+#import "FATWebExtension.h"
 #import "FATAppletDelegate.h"
 #import "FATAppletMenuProtocol.h"
+#import "FATWeakScriptMessageDelegate.h"
