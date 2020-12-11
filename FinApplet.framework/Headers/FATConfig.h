@@ -60,6 +60,12 @@ SDK指纹，证联服务器时，必填
 @property (nonatomic, assign) BOOL disableAuthorize;
 
 /**
+后台自动检查更新的小程序个数
+取值范围：0~50。0代表不检查更新；不设置默认是3。
+*/
+@property (nonatomic, assign) NSInteger appletIntervalUpdateLimit;
+
+/**
 apm 统计的扩展信息
 */
 @property (nonatomic, strong) NSDictionary *apmExtension;
