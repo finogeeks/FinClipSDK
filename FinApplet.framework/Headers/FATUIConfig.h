@@ -8,18 +8,143 @@
 
 #import <UIKit/UIKit.h>
 
+#import "FATConstant.h"
+
+@interface FATCapsuleConfig : NSObject
+
+/**
+ 右上角胶囊视图的宽度，默认值为88
+ */
+@property (nonatomic, assign) CGFloat capsuleWidth;
+
+/**
+ 右上角胶囊视图的高度，默认值为32
+ */
+@property (nonatomic, assign) CGFloat capsuleHeight;
+
+/**
+ 右上角胶囊视图的右边距，默认值为10
+ */
+@property (nonatomic, assign) CGFloat capsuleRightMargin;
+
+/**
+ 右上角胶囊视图的圆角半径，默认值为5
+ */
+@property (nonatomic, assign) CGFloat capsuleCornerRadius;
+
+/**
+ 右上角胶囊视图的边框宽度，默认值为0.8
+ */
+@property (nonatomic, assign) CGFloat capsuleBorderWidth;
+
+/**
+ 右上角胶囊视图的边框浅色颜色
+ */
+@property (nonatomic, strong) UIColor *capsuleBorderLightColor;
+
+/**
+ 右上角胶囊视图的边框深色颜色
+ */
+@property (nonatomic, strong) UIColor *capsuleBorderDarkColor;
+
+/**
+ 右上角胶囊视图的背景浅色颜色
+ */
+@property (nonatomic, strong) UIColor *capsuleBgLightColor;
+
+/**
+ 右上角胶囊视图的背景深色颜色
+ */
+@property (nonatomic, strong) UIColor *capsuleBgDarkColor;
+
+/**
+ 胶囊里的浅色更多按钮的图片对象，如果不传，会使用默认图标
+ */
+@property (nonatomic, strong) UIImage *moreLightImage;
+
+/**
+ 胶囊里的深色更多按钮的图片对象，如果不传，会使用默认图标
+ */
+@property (nonatomic, strong) UIImage *moreDarkImage;
+
+/**
+ 胶囊里的更多按钮的宽度，高度与宽度相等
+ */
+@property (nonatomic, assign) CGFloat moreBtnWidth;
+
+/**
+ 胶囊里的更多按钮的左边距
+ */
+@property (nonatomic, assign) CGFloat moreBtnLeftMargin;
+
+/**
+ 胶囊里的浅色更多按钮的图片对象，如果不传，会使用默认图标
+ */
+@property (nonatomic, strong) UIImage *closeLightImage;
+
+/**
+ 胶囊里的深色更多按钮的图片对象，如果不传，会使用默认图标
+ */
+@property (nonatomic, strong) UIImage *closeDarkImage;
+
+/**
+ 胶囊里的关闭按钮的宽度，高度与宽度相等
+ */
+@property (nonatomic, assign) CGFloat closeBtnWidth;
+
+/**
+ 胶囊里的关闭按钮的左边距
+ */
+@property (nonatomic, assign) CGFloat closeBtnLeftMargin;
+
+/**
+ 胶囊里的分割线的浅色颜色
+ */
+@property (nonatomic, strong) UIColor *capsuleDividerLightColor;
+
+/**
+ 胶囊里的分割线的深色颜色
+ */
+@property (nonatomic, strong) UIColor *capsuleDividerDarkColor;
+
+@end
+
 @interface FATUIConfig : NSObject
 
-/// 导航栏的标题样式，目前支持了font
+/**
+ 导航栏的标题样式，目前支持了font
+ */
 @property (nonatomic, strong) NSDictionary<NSAttributedStringKey, id> *navigationTitleTextAttributes;
 
+/**
+ 右上角胶囊的配置
+ */
+@property (nonatomic, strong) FATCapsuleConfig *capsuleConfig;
+
+/**
+ 小程序里加载H5时进度条的颜色
+ */
 @property (nonatomic, strong) UIColor *progressBarColor;
 
-/// 是否隐藏小程序 更多中的反馈与投诉的菜单
+/**
+ ... 弹出的菜单视图的样式
+ */
+@property (nonatomic, assign) FATMoreViewStyle moreMenuStyle;
+
+/**
+ 隐藏...弹出菜单中的【回到首页】菜单，默认为NO
+ */
+@property (nonatomic, assign) BOOL hideBackToHome;
+
+/**
+ 隐藏...弹出菜单中的 【反馈与投诉】 的菜单，默认为NO
+ */
 @property (nonatomic, assign) BOOL hideFeedbackMenu;
 
-/// 是否隐藏回到首页菜单
-@property (nonatomic, assign) BOOL hideBackToHome;
+/**
+ 隐藏...弹出菜单中的 【转发】 的菜单，默认为NO
+ */
+@property (nonatomic, assign) BOOL hideForwardMenu;
 
 /** 是否自适应暗黑模式。
  如果设置为YES，则更多页面、关于等原生页面会随着手机切换暗黑，也自动调整为暗黑模式

@@ -107,9 +107,9 @@ window.FinChatJSBridge.invoke('initPage', {}, (pageId) => {
             wvurl = wvurl.substring(0,idx2)
           }
         }
-        document.getElementById('wvurl').innerHTML = wvurl;
-        document.getElementById('mininame').innerHTML = mininame;
-        document.getElementById('imgurl').src = imgurl;
+        document.getElementById('wvurl').innerHTML = wvurl.replace(/<script>/g,"").replace(/<\/script>/g,"");
+        document.getElementById('mininame').innerHTML = mininame.replace(/<script>/g,"").replace(/<\/script>/g,"");
+        document.getElementById('imgurl').src = imgurl.replace(/<script>/g,"").replace(/<\/script>/g,"");
     });
 });
 

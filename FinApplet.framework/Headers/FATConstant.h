@@ -25,6 +25,11 @@ typedef NS_ENUM(NSUInteger, FATApiCryptType) {
     FATApiCryptTypeSM,      // 国密MD5
 };
 
+typedef NS_ENUM(NSUInteger, FATMoreViewStyle) {
+    FATMoreViewStyleDefault,
+    FATMoreViewStyleNormal
+};
+
 typedef NS_ENUM(NSUInteger, FATCrashProtectionType) {
     FATCrashProtectionTypeNone = 0,
     FATCrashProtectionTypeUnrecognizedSelector = 1 << 1,
@@ -44,6 +49,15 @@ typedef NS_ENUM(NSUInteger, FATCrashProtectionType) {
  @param result 处理结果数据
  */
 typedef void (^FATExtensionApiCallback)(FATExtensionCode code, NSDictionary<NSString *, NSObject *> *result);
+
+#pragma mark - 启动小程序时的启动参数
+typedef NSString* FATStartParamKey NS_REFINED_FOR_SWIFT;
+
+FOUNDATION_EXTERN FATStartParamKey const FATStartParamPath;
+FOUNDATION_EXTERN FATStartParamKey const FATStartParamQuery;
+FOUNDATION_EXTERN FATStartParamKey const FATStartParamScene;
+
+
 
 typedef NSString* FATShareMediaType NS_REFINED_FOR_SWIFT;
 

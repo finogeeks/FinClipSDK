@@ -9,13 +9,17 @@
 
 #import <Foundation/Foundation.h>
 
-@interface FATAppletInfo : NSObject<NSCoding>
+//该模型是自动更新数据库表结构的，升级字段的时候 只要直接加属性就好了
+@interface FATAppletInfo : NSObject
 
 /// 小程序id
 @property (nonatomic, copy) NSString *appId;
 
 /// 小程序开发者userId
 @property (nonatomic, copy) NSString *userId;
+
+/// 小程序的机构id
+@property (nonatomic, copy) NSString *groupId;
 
 /// 小程序图标
 @property (nonatomic, copy) NSString *appAvatar;
@@ -26,7 +30,7 @@
 /// 小程序描述
 @property (nonatomic, copy) NSString *appDescription;
 
-/// 小程序在本地的相对路径
+/// 小程序zip在本地的相对路径
 @property (nonatomic, copy) NSString *appPath;
 
 /// 小程序版本号
@@ -51,15 +55,31 @@
 /// 小程序版本索引
 @property (nonatomic, strong) NSNumber *sequence;
 
+/// 服务器地址
+@property (nonatomic, copy) NSString *apiServer;
+
+/// 指定的基础库版本
+@property (nonatomic, copy) NSString *libraryVersion;
+
+/// 最近一次打开的时间戳
+@property (nonatomic, assign) long long latestOpenTs;
+
 /// 小程序是否已安装 （其实类似收藏）
 @property (nonatomic, assign) BOOL installed;
 
-@property (nonatomic, strong) NSDictionary *info;
+@property (nonatomic, copy) NSDictionary *info;
 
 /**
  小程序的原数据
  */
-@property (nonatomic, strong) NSDictionary *originalInfo;
+@property (nonatomic, copy) NSDictionary *originalInfo;
+
+/**
+ 小程序启动时的启动参数
+ */
+@property (nonatomic, copy) NSDictionary *startParams;
+
+
 
 @end
 

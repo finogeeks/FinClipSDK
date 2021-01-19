@@ -13,6 +13,9 @@
 #import "FATConstant.h"
 #import "FATAppletInfo.h"
 #import "FATAppletDelegate.h"
+#import "FATAppletNativeProtocol.h"
+#import "FATAppletRequest.h"
+#import "FATError.h"
 
 @interface FATClient : NSObject
 
@@ -29,6 +32,7 @@
 
 @property (nonatomic, weak) id<FATAppletDelegate> delegate;
 
+
 + (instancetype)sharedClient;
 
 - (BOOL)initWithConfig:(FATConfig *)config error:(NSError **)error;
@@ -36,25 +40,31 @@
 - (BOOL)initWithConfig:(FATConfig *)config uiConfig:(FATUIConfig *)uiConfig error:(NSError **)error;
 
 /**
- 清空内存中缓存的小程序数据
+ 清空内存中缓存的小程序
  */
 - (void)clearMemoryCache;
 
 /**
-删除内存中的某个小程序
+清除内存中的某个小程序
 */
 - (void)clearMemeryApplet:(NSString *)appletId;
 
-///  删除本地缓存的小程序
+/**
+删除本地的所有小程序
+*/
 - (void)clearLocalApplets;
+
+/**
+ 从本地删除小程序
+ 
+ @param appletId 小程序id
+ @return BOOL 结果
+ */
+- (BOOL)removeAppletFromLocalCache:(NSString *)appletId;
 
 /// 处理URL
 /// @param URL 具体的URL路由
 - (BOOL)handleOpenURL:(NSURL *)URL;
-
-/// 返回值为UIInterfaceOrientationMask的Number对象。
-/// 如果不是小程序SDK中的控制器，则返回nil。
-- (NSNumber *)supportedInterfaceOrientations;
 
 #pragma mark - start applet api
 /**
@@ -220,19 +230,11 @@
 
 #pragma mark - recent used applet api
 /**
- 获取本地已缓存的小程序
+ 获取本地的小程序
  
  @return 小程序数组<FATAppletInfo>
  */
 - (NSArray *)getAppletsFromLocalCache;
-
-/**
- 从本地缓存中删除小程序
- 
- @param appletId 小程序id
- @return BOOL 结果
- */
-- (BOOL)removeAppletFromLocalCache:(NSString *)appletId;
 
 #pragma mark - extension api
 /**
@@ -280,8 +282,31 @@
 
 /**
  生成当前页面截图
- 
+ 宽高比是5:4
  */
 - (UIImage *)getCurrentAppletImage;
+
+/**
+ 获取当前加载H5的URL
+ 如果小程序当前页面加载的不是H5，则返回nil
+ */
+- (NSURL *)getCurrentWebViewURL;
+
+/**
+ 获取小程序页面的userAgent
+ */
+- (void)getCurrentWebViewUserAgentWithCompletion:(void (^)(NSString *userAgent, NSError * error))completionHandler;
+
+#pragma mark - new apis
+
+/// 启动小程序
+/// @param request 启动的request
+/// @param parentVC 父页面
+/// @param completion 完成回调
+/// @param closeCompletion 关闭小程序时的回调
+- (void)startAppletWithRequest:(FATAppletRequest *)request
+        InParentViewController:(UIViewController *)parentVC
+                    completion:(void (^)(BOOL result, FATError *error))completion
+               closeCompletion:(dispatch_block_t)closeCompletion;
 
 @end

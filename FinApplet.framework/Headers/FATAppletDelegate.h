@@ -41,16 +41,45 @@
 /// @param appletId 小程序id
 - (NSDictionary *)grayExtensionWithAppletId:(NSString *)appletId;
 
+#pragma mark - applet open and close
+/**
+ 小程序打开完成的事件
+ @param appletId 小程序id
+ @param error 错误对象
+ */
+- (void)applet:(NSString *)appletId didOpenCompletion:(NSError *)error;
+
+/**
+ 小程序关闭完成的事件
+ @param appletId 小程序id
+ @param error 错误对象
+ */
+- (void)applet:(NSString *)appletId didCloseCompletion:(NSError *)error;
+
 #pragma mark - more menu
-/// 更多按钮中自定义的菜单，会在页面弹出菜单时调用该api
-/// @param appletInfo 小程序信息
-/// @param path 页面路径
+
+/**
+ 右上角胶囊中 【...】的点击事件，可在该事件中弹出自己设计的更多视图。
+ 因此实现了该代理事件，就不会触发下面两个自定义菜单的事件
+ @param appletInfo 小程序信息
+ @path 小程序页面路径，示例：pages/index/index
+ */
+- (void)applet:(FATAppletInfo *)appletInfo didClickMoreBtnAtPath:(NSString *)path;
+
+/**
+ 更多按钮中自定义的菜单，会在页面弹出菜单时调用该api
+ @param appletInfo 小程序信息
+ @param path 页面路径
+ */
 - (NSArray<id<FATAppletMenuProtocol>> *)customMenusInApplet:(FATAppletInfo *)appletInfo atPath:(NSString *)path;
 
-/// 点击自定义菜单时，会触发的事件
-/// @param customMenu 自定义菜单对象
-/// @param appletInfo 小程序信息
-/// @param path 当前页面路径
+/**
+ 点击自定义菜单时，会触发的事件
+ 如果未实现了该代理，才会触发【-applet:didClickCustomMenu:sourceInfo:】
+ @param customMenu 自定义菜单对象
+ @param appletInfo 小程序信息
+ @param path 当前页面路径
+ */
 - (void)customMenu:(id<FATAppletMenuProtocol>)customMenu inApplet:(FATAppletInfo *)appletInfo didClickAtPath:(NSString *)path;
 
 @end

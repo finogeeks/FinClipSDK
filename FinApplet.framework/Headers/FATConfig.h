@@ -7,17 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "FATStoreConfig.h"
 #import "FATConstant.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FATConfig : NSObject
-
-/**
-appId，也就是 SDK secret，必填
-*/
-@property (nonatomic, copy, readonly) NSString *appSecret;
 
 /**
  appKey，也就是SDK Key，必填
@@ -26,10 +21,9 @@ appId，也就是 SDK secret，必填
 @property (nonatomic, copy, readonly) NSString *appKey;
 
 /**
- 当前用户id，
- 小程序缓存信息会存储在以userId命名的不同目录下。
- */
-@property (nonatomic, copy) NSString *currentUserId;
+SDK secret
+*/
+@property (nonatomic, copy, readonly) NSString *appSecret;
 
 /**
  服务器地址，客户部署的后台地址，必填
@@ -43,15 +37,21 @@ appId，也就是 SDK secret，必填
  */
 @property (nonatomic, copy) NSString *apiPrefix;
 
+/// 小程序SDK中的api加密，默认为MD5
+@property (nonatomic, assign) FATApiCryptType cryptType;
+
 /**
 SDK指纹，证联服务器时，必填
 */
 @property (nonatomic, copy) NSString *fingerprint;
 
-@property (nonatomic, strong) NSDictionary *theme;
+@property (nonatomic, copy, readonly) NSArray<FATStoreConfig *> *storeConfigs;
 
-/// 小程序SDK中的api加密，默认为MD5
-@property (nonatomic, assign) FATApiCryptType cryptType;
+/**
+ 当前用户id，
+ 小程序缓存信息会存储在以userId命名的不同目录下。
+ */
+@property (nonatomic, copy) NSString *currentUserId;
 
 /**
 是否不让SDK申请权限
@@ -76,11 +76,25 @@ apm 统计的扩展信息
 */
 @property (nonatomic, assign) BOOL startCrashProtection;
 
+@property (nonatomic, strong) NSDictionary *theme;
+
 #pragma mark - method
 /// 创建config对象
 /// @param appSecret appSecret，也就是SDK Secret
 /// @param appKey 也就是SDK Key
 + (instancetype)configWithAppSecret:(NSString *)appSecret appKey:(NSString *)appKey;
+
+/**
+ 创建config对象
+ @param storeConfigs 应用市场对象数组
+*/
++ (instancetype)configWithStoreConfigs:(NSArray<FATStoreConfig *> *)storeConfigs;
+
+/**
+ 获取config对象
+ @param apiServer 服务器地址
+*/
+- (FATStoreConfig *)storeConfigWithApiServer:(NSString *)apiServer;
 
 @end
 

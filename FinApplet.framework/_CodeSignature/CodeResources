@@ -4,6 +4,54 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>FATIBVideo.bundle/fatib_bigPlay@2x.png</key>
+		<data>
+		DwxN5cTTnusJ0oefDfc7irPHVW8=
+		</data>
+		<key>FATIBVideo.bundle/fatib_bigPlay@3x.png</key>
+		<data>
+		HOT0rBXDZb6YgNo65rQe7Oi0QWU=
+		</data>
+		<key>FATIBVideo.bundle/fatib_cancel@2x.png</key>
+		<data>
+		VYRmBGtPGCV4ww4BEatu8v5J8UI=
+		</data>
+		<key>FATIBVideo.bundle/fatib_cancel@3x.png</key>
+		<data>
+		i/D1o2XZMCssVPaONznqw2Gx+mc=
+		</data>
+		<key>FATIBVideo.bundle/fatib_circlePoint@2x.png</key>
+		<data>
+		iB7SjC9TgAfUyWMvkhRL3kUUvUI=
+		</data>
+		<key>FATIBVideo.bundle/fatib_circlePoint@3x.png</key>
+		<data>
+		Sza7FlUNoeT68VGeTbMNFS5vfM0=
+		</data>
+		<key>FATIBVideo.bundle/fatib_pause@2x.png</key>
+		<data>
+		4BUmRPuOjlXywP4UjOnMfhiaTac=
+		</data>
+		<key>FATIBVideo.bundle/fatib_pause@3x.png</key>
+		<data>
+		rnAEVUvgTdGZ8W6QfyhcMWxSyt4=
+		</data>
+		<key>FATIBVideo.bundle/fatib_play@2x.png</key>
+		<data>
+		AKLZrOW26qPK8TLkEZ92mYL2hfA=
+		</data>
+		<key>FATIBVideo.bundle/fatib_play@3x.png</key>
+		<data>
+		jJFTHGyuOoyqBU2ca4O8GDxYZoQ=
+		</data>
+		<key>FATImageBrowser.bundle/fatib_loading@2x.png</key>
+		<data>
+		j+y9WpjM4DlZLrTxd1m8tYd68/A=
+		</data>
+		<key>FATImageBrowser.bundle/fatib_loading@3x.png</key>
+		<data>
+		yx5VWDO/0Mr4V5qiyyDxLkBK3Hc=
+		</data>
 		<key>FATMImagePickerController.bundle/MMVideoPreviewPlay@2x.png</key>
 		<data>
 		nvireIIXZuqdE+uJXGeFVZMWkxI=
@@ -176,6 +224,10 @@
 		<data>
 		+HKzv+xpBkS7FOlb3LL4AhU+dQ8=
 		</data>
+		<key>FinApplet.bundle/minipro_menu_close@3x.png</key>
+		<data>
+		w6TX+DtvhaW4jttyS7IxZg1jcps=
+		</data>
 		<key>FinApplet.bundle/minipro_video_closed@3x.png</key>
 		<data>
 		t3zJgUbis2Of3M8ZqQpC6HZ9Hxg=
@@ -222,31 +274,63 @@
 		</data>
 		<key>Headers/FATAppletDelegate.h</key>
 		<data>
-		hX8UixVAFEeroH7YNIVcJtGtMxQ=
+		YVCKFokMwNxphl5uAfVRNOKkbpE=
 		</data>
 		<key>Headers/FATAppletInfo.h</key>
 		<data>
-		J7oKEXssnC48VmQHApIdZNpe9PA=
+		vEQw+B3IloGcDO7zGd7PbJnzH9I=
 		</data>
 		<key>Headers/FATAppletMenuProtocol.h</key>
 		<data>
-		iu7awxC33n60wsF3rMefxDpJGoc=
+		6AlamAVBbCGwBAfpuBLLuIOenQg=
+		</data>
+		<key>Headers/FATAppletNativeProtocol.h</key>
+		<data>
+		Prfe5qUv8lLif8afbH90OwKid1s=
+		</data>
+		<key>Headers/FATAppletRequest.h</key>
+		<data>
+		cYrN865AFrHjLJiJAMRA3sDYdLA=
 		</data>
 		<key>Headers/FATClient.h</key>
 		<data>
-		u7tgI9XU1uzcz5/6Q73b8qNJbVk=
+		DTWyqFXlynBEAI2SI6BtPTh/3Ks=
 		</data>
 		<key>Headers/FATConfig.h</key>
 		<data>
-		sY6YSonLATdIaZYZ8AoXx9FGDsg=
+		Q567bffBeVmfiLM8DKjT2KTcFIk=
 		</data>
 		<key>Headers/FATConstant.h</key>
 		<data>
-		dCr76KNiYlefcza/9KjHfVgjKCA=
+		Vs0pAk66/ZetDE0+YzkpoOYjYBE=
+		</data>
+		<key>Headers/FATError.h</key>
+		<data>
+		di/XfGkO1FggBeSUy5zW7eHziec=
+		</data>
+		<key>Headers/FATLogEngine.h</key>
+		<data>
+		yBxad0tZXUTigdeUbEynjdJ8sB8=
+		</data>
+		<key>Headers/FATLogManager.h</key>
+		<data>
+		eZNHs7St4c96voZoNtMpIeJmQFA=
+		</data>
+		<key>Headers/FATLogger.h</key>
+		<data>
+		LSqFgnzO7JPLcJJZjh+1m7gbGnI=
+		</data>
+		<key>Headers/FATNativeViewManager.h</key>
+		<data>
+		jPe8xizd22dBBzPm3REXJ2UgUpg=
+		</data>
+		<key>Headers/FATStoreConfig.h</key>
+		<data>
+		uOwtV9BejiMdeVFWfQDeSXSD3NU=
 		</data>
 		<key>Headers/FATUIConfig.h</key>
 		<data>
-		ENYcHUpvqAVnXK1Sl9zvM/bpwac=
+		34pSgnKkmKP1RJUk5SsegYsljGI=
 		</data>
 		<key>Headers/FATWeakScriptMessageDelegate.h</key>
 		<data>
@@ -258,11 +342,11 @@
 		</data>
 		<key>Headers/FinApplet.h</key>
 		<data>
-		SeNKoozDMA+wUxI7LzDtV4g0Bp0=
+		MbsD0YwvEXbuHZgjCBLniS8KM38=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		1nike25XLhZpklaalN2Tu+THeRI=
+		h+OSOq+s+cjFnCyEMBrCBjqvF0Y=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -270,7 +354,7 @@
 		</data>
 		<key>not_domain.html</key>
 		<data>
-		RgrPS5IRroQgoJPJ9THLhSyca+0=
+		XLukffnYZfizWW6285I9QKGKtK8=
 		</data>
 		<key>not_found_page.html</key>
 		<data>
@@ -279,6 +363,138 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>FATIBVideo.bundle/fatib_bigPlay@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DwxN5cTTnusJ0oefDfc7irPHVW8=
+			</data>
+			<key>hash2</key>
+			<data>
+			oSNmr7nu/0l+CuzMpobSxEx8xVF1+Kbq4AXGvwPdPlM=
+			</data>
+		</dict>
+		<key>FATIBVideo.bundle/fatib_bigPlay@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HOT0rBXDZb6YgNo65rQe7Oi0QWU=
+			</data>
+			<key>hash2</key>
+			<data>
+			jlgRzz+FvMZWI+PwTzMpZU8y25m9uotEhtezOVV3ViE=
+			</data>
+		</dict>
+		<key>FATIBVideo.bundle/fatib_cancel@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VYRmBGtPGCV4ww4BEatu8v5J8UI=
+			</data>
+			<key>hash2</key>
+			<data>
+			Bw9AeZHzdjSMpWM6mnYeUdOoUavkyec9da7FXm36C2M=
+			</data>
+		</dict>
+		<key>FATIBVideo.bundle/fatib_cancel@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			i/D1o2XZMCssVPaONznqw2Gx+mc=
+			</data>
+			<key>hash2</key>
+			<data>
+			L3GNI5nUT38+jkELeZPGtIsvGSj4ZjT/S4wuZWPXq9A=
+			</data>
+		</dict>
+		<key>FATIBVideo.bundle/fatib_circlePoint@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iB7SjC9TgAfUyWMvkhRL3kUUvUI=
+			</data>
+			<key>hash2</key>
+			<data>
+			wEsHN18tFx9hI9HlH/7BwvvjHvo5m0mYbACVws4KHOU=
+			</data>
+		</dict>
+		<key>FATIBVideo.bundle/fatib_circlePoint@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Sza7FlUNoeT68VGeTbMNFS5vfM0=
+			</data>
+			<key>hash2</key>
+			<data>
+			yQADjTh3dMyBXF+jBh/1iGmN4QhcOnUfLVCqAynDKXg=
+			</data>
+		</dict>
+		<key>FATIBVideo.bundle/fatib_pause@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4BUmRPuOjlXywP4UjOnMfhiaTac=
+			</data>
+			<key>hash2</key>
+			<data>
+			ipfUUb+Xwm8VUbjqnR4gdiEWsvxOHbIcTmd4zj9hl14=
+			</data>
+		</dict>
+		<key>FATIBVideo.bundle/fatib_pause@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rnAEVUvgTdGZ8W6QfyhcMWxSyt4=
+			</data>
+			<key>hash2</key>
+			<data>
+			qZvjCRcEAgg54QQbh3Hx0L3fuhnn61LUDNLU1d26XPQ=
+			</data>
+		</dict>
+		<key>FATIBVideo.bundle/fatib_play@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AKLZrOW26qPK8TLkEZ92mYL2hfA=
+			</data>
+			<key>hash2</key>
+			<data>
+			yAhKL/0yG5z7e2fEhcdxMDkUvIxmLPGvlM/apKonPRY=
+			</data>
+		</dict>
+		<key>FATIBVideo.bundle/fatib_play@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jJFTHGyuOoyqBU2ca4O8GDxYZoQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			664bVCGEZuSuk8kbXz6xZ5BeWWMuo9Egzl/mcWp3bXs=
+			</data>
+		</dict>
+		<key>FATImageBrowser.bundle/fatib_loading@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			j+y9WpjM4DlZLrTxd1m8tYd68/A=
+			</data>
+			<key>hash2</key>
+			<data>
+			1ZHc32gdAeL1eNlaojYf+AJeBH0d1Y1WVguyOnGKYVI=
+			</data>
+		</dict>
+		<key>FATImageBrowser.bundle/fatib_loading@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yx5VWDO/0Mr4V5qiyyDxLkBK3Hc=
+			</data>
+			<key>hash2</key>
+			<data>
+			oLMDdqk44X4mtL+zJXCH9x0GXU0qmiPFSt6xNSSWx1w=
+			</data>
+		</dict>
 		<key>FATMImagePickerController.bundle/MMVideoPreviewPlay@2x.png</key>
 		<dict>
 			<key>hash</key>
@@ -705,6 +921,17 @@
 			NiKCGKK+cwQ6BpAx1UmImq+n1cPVhOyC8AvITId+cBY=
 			</data>
 		</dict>
+		<key>FinApplet.bundle/minipro_menu_close@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			w6TX+DtvhaW4jttyS7IxZg1jcps=
+			</data>
+			<key>hash2</key>
+			<data>
+			6G2haS6ZTdIvkJZuu+Qopj9gXRm6CkEc4hJbLqANWh4=
+			</data>
+		</dict>
 		<key>FinApplet.bundle/minipro_video_closed@3x.png</key>
 		<dict>
 			<key>hash</key>
@@ -830,77 +1057,165 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hX8UixVAFEeroH7YNIVcJtGtMxQ=
+			YVCKFokMwNxphl5uAfVRNOKkbpE=
 			</data>
 			<key>hash2</key>
 			<data>
-			3dhTwy8keYa5htme55j/InqaCJrrxFhuGs1johVD0CU=
+			PY0GecuGbdZvRY5lZY5YYg5UHk83+rtJBeAj3TtVKhM=
 			</data>
 		</dict>
 		<key>Headers/FATAppletInfo.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			J7oKEXssnC48VmQHApIdZNpe9PA=
+			vEQw+B3IloGcDO7zGd7PbJnzH9I=
 			</data>
 			<key>hash2</key>
 			<data>
-			q1gzQ9lria+kfpJy2RSdV4u3l2P32udIHMjtFlHHYdk=
+			LCCpKbHbdG7MKxQlOJqu22aXTjNfFUKOd8fNIS6ObnY=
 			</data>
 		</dict>
 		<key>Headers/FATAppletMenuProtocol.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iu7awxC33n60wsF3rMefxDpJGoc=
+			6AlamAVBbCGwBAfpuBLLuIOenQg=
 			</data>
 			<key>hash2</key>
 			<data>
-			sbi+V8sbxjY+fLKOeQxixFbBIn8A7M3e5WZdU8l0M6s=
+			r5+fM7HsyRUBrAyDZNwrPK8NRiXmqgM90p4WVczgCec=
+			</data>
+		</dict>
+		<key>Headers/FATAppletNativeProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Prfe5qUv8lLif8afbH90OwKid1s=
+			</data>
+			<key>hash2</key>
+			<data>
+			S6pf1ugJRrEGQicP4JA7Dh8izFpOFLUep+apl2SXfGU=
+			</data>
+		</dict>
+		<key>Headers/FATAppletRequest.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cYrN865AFrHjLJiJAMRA3sDYdLA=
+			</data>
+			<key>hash2</key>
+			<data>
+			aZdNCAoXCjtqDgGOdcheoP13+9WNQXUDja4hAfCP9zY=
 			</data>
 		</dict>
 		<key>Headers/FATClient.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			u7tgI9XU1uzcz5/6Q73b8qNJbVk=
+			DTWyqFXlynBEAI2SI6BtPTh/3Ks=
 			</data>
 			<key>hash2</key>
 			<data>
-			skAgE1tUNJWG1UslwhfdOduo/jWEXRaS82c1drP5yfg=
+			23EBBJKpVmJMYmL53uBr0c1Ch/zH/aSVX7ePltKOakg=
 			</data>
 		</dict>
 		<key>Headers/FATConfig.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sY6YSonLATdIaZYZ8AoXx9FGDsg=
+			Q567bffBeVmfiLM8DKjT2KTcFIk=
 			</data>
 			<key>hash2</key>
 			<data>
-			EMKyJ5ECoI9Spt3PVjaa4nhcBJ7RmgzL8FulOAft5rU=
+			AVn/piCAfJrvuPgqPpOKohNBOPlMeDImJETiJsA+SeM=
 			</data>
 		</dict>
 		<key>Headers/FATConstant.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dCr76KNiYlefcza/9KjHfVgjKCA=
+			Vs0pAk66/ZetDE0+YzkpoOYjYBE=
 			</data>
 			<key>hash2</key>
 			<data>
-			yL0xX2Kvi9tVpdmo91kw7ojCj4IFpXORk8VE0Nxb+g8=
+			UP3cQr0aFtN8z7Eip/vjD0yUDcPIhubPI0cT8dVbwnw=
+			</data>
+		</dict>
+		<key>Headers/FATError.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			di/XfGkO1FggBeSUy5zW7eHziec=
+			</data>
+			<key>hash2</key>
+			<data>
+			z9gZbeQ7kzaqe3sJvHylWesS1jgaxB+c/jOaSpIRbU8=
+			</data>
+		</dict>
+		<key>Headers/FATLogEngine.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yBxad0tZXUTigdeUbEynjdJ8sB8=
+			</data>
+			<key>hash2</key>
+			<data>
+			6gEw8xUVKjtJmAYKid6+czeL0nMT8h3PhjdBAPLdJgs=
+			</data>
+		</dict>
+		<key>Headers/FATLogManager.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eZNHs7St4c96voZoNtMpIeJmQFA=
+			</data>
+			<key>hash2</key>
+			<data>
+			vzU/LI2K9D6GkeVHQ+2LrR7yqq301wXwTHmf5KflZvY=
+			</data>
+		</dict>
+		<key>Headers/FATLogger.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LSqFgnzO7JPLcJJZjh+1m7gbGnI=
+			</data>
+			<key>hash2</key>
+			<data>
+			AuPQZSgr7ArEBJiFOtMex5tjq1rvnQ7I1xLF4FqzQv4=
+			</data>
+		</dict>
+		<key>Headers/FATNativeViewManager.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jPe8xizd22dBBzPm3REXJ2UgUpg=
+			</data>
+			<key>hash2</key>
+			<data>
+			3x6pgEP7VzSvp1B5M4BeaWqSddc9dMNo+h5SfwSySw8=
+			</data>
+		</dict>
+		<key>Headers/FATStoreConfig.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uOwtV9BejiMdeVFWfQDeSXSD3NU=
+			</data>
+			<key>hash2</key>
+			<data>
+			yRPHhUoKdv3LH2CelP1Fmd009iR0oSxwqm2PgmfVIMY=
 			</data>
 		</dict>
 		<key>Headers/FATUIConfig.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ENYcHUpvqAVnXK1Sl9zvM/bpwac=
+			34pSgnKkmKP1RJUk5SsegYsljGI=
 			</data>
 			<key>hash2</key>
 			<data>
-			N1CE7CMveMZDl+z5ZgZSfAqf3V8WpFoZfuMMSAw0gEs=
+			vhKa2cNMNefVJBCkWsR6RKWdk/vPIYJIAJFcFa/tkCs=
 			</data>
 		</dict>
 		<key>Headers/FATWeakScriptMessageDelegate.h</key>
@@ -929,11 +1244,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SeNKoozDMA+wUxI7LzDtV4g0Bp0=
+			MbsD0YwvEXbuHZgjCBLniS8KM38=
 			</data>
 			<key>hash2</key>
 			<data>
-			8hGmZzXg/Y6VUBbY8qJcPTk9pVtNJZfoCVH80b5ZZ+o=
+			liD4MTYt95wuAhMndJsysqf7qNRu1YbAzhbNnAhN5+c=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -951,11 +1266,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RgrPS5IRroQgoJPJ9THLhSyca+0=
+			XLukffnYZfizWW6285I9QKGKtK8=
 			</data>
 			<key>hash2</key>
 			<data>
-			v/cRJfL5yNOFs99No71EZ7fhzlyau8w9hMjMa1f2/qU=
+			oayOXh50ei0AzM8NIiZc9wveNDusJOdNZ/ps+ihSO6Q=
 			</data>
 		</dict>
 		<key>not_found_page.html</key>
