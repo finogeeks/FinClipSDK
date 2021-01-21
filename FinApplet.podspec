@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "FinApplet"
-  s.version      = "2.14.14"
+  s.version      = "2.14.15"
   s.summary      = "MatrixSDK."
   s.description  = <<-DESC
                     this is common
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.author             = { "gordanyang" => "yangtao@finogeeks.com" }
   s.platform     = :ios, "7.0"
   s.ios.deployment_target = "9.0"
-  s.source       = { :http => "https://app.finogeeks.com/finchat/sdk/FinApplet-2.14.14.zip"  }
+  s.source       = { :http => "https://app.finogeeks.com/finchat/sdk/FinApplet-2.14.15.zip"  }
   s.source_files  = "Headers/**/*.h"
   # s.resource  = ['*.{xib}']
   s.resources = ['FinApplet/Src/Resources/FinApplet.bundle']
