@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                     this is common
                    DESC
-  s.homepage     = "https://mp.finogeeks.com"
+  s.homepage     = "https://www.finclip.com"
   s.license      = {
     :type => 'Copyright',
     :text => <<-LICENSE
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.author             = { "developer" => "developer@finogeeks.com" }
   s.platform     = :ios, "7.0"
   s.ios.deployment_target = "8.0"
-  s.source       = { :git => 'https://github.com/finogeeks/MOPLibrary.git', :tag =>"#{s.version}" }
+  s.source       = { :git => 'https://github.com/finogeeks/FinClipSDK.git', :tag =>"#{s.version}" }
   s.vendored_frameworks = "FinApplet.framework" 
   s.requires_arc = true
 end
