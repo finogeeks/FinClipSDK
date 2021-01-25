@@ -260,6 +260,10 @@
 
 #pragma mark - tool api
 /**
+ 向service 发送事件
+ */
+- (void)sendToCurentServiceEvent:(NSString *)eventName param:(NSDictionary *)param;
+/**
  保存文件到小程序的缓存路径
  
  @param fileData 文件的二进制数据
