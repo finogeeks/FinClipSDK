@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "FinApplet"
-  s.version      = "2.14.45"
+  s.version      = "2.20.13"
   s.summary      = "凡泰小程序SDK."
   s.description  = <<-DESC
                     this is common
