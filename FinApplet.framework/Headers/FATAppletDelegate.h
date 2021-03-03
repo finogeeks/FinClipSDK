@@ -74,21 +74,13 @@
 - (NSArray<id<FATAppletMenuProtocol>> *)customMenusInApplet:(FATAppletInfo *)appletInfo atPath:(NSString *)path;
 
 /**
- 点击自定义菜单时，会触发的事件（旧版，弃用）
+ 点击自定义菜单时，会触发的事件
  如果未实现了该代理，才会触发【-applet:didClickCustomMenu:sourceInfo:】
  @param customMenu 自定义菜单对象
  @param appletInfo 小程序信息
  @param path 当前页面路径
  */
 - (void)customMenu:(id<FATAppletMenuProtocol>)customMenu inApplet:(FATAppletInfo *)appletInfo didClickAtPath:(NSString *)path;
-
-/**
- 点击自定义菜单时，会触发的事件（新版）
- 只有实现了该代理方法，才会触发【-clickCustomItemMenuWithInfo:completion:】
- @param contentInfo 分享信息
- @param completion 分享回调
- */
-- (void)clickCustomItemMenuWithInfo:(NSDictionary *)contentInfo completion:(void (^)(FATExtensionCode code, NSDictionary *result))completion;
 
 @end
 

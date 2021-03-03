@@ -30,11 +30,6 @@ typedef NS_ENUM(NSUInteger, FATMoreViewStyle) {
     FATMoreViewStyleNormal
 };
 
-typedef NS_ENUM(NSUInteger, FATAppletMenuStyle) {
-    FATAppletMenuStyleCommon = 0,
-    FATAppletMenuStyleOnMiniProgram
-};
-
 typedef NS_ENUM(NSUInteger, FATCrashProtectionType) {
     FATCrashProtectionTypeNone = 0,
     FATCrashProtectionTypeUnrecognizedSelector = 1 << 1,

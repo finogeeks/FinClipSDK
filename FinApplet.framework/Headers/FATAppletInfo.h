@@ -64,9 +64,6 @@
 /// 最近一次打开的时间戳
 @property (nonatomic, assign) long long latestOpenTs;
 
-/// 是否是临时小程序，（IDE扫码预览时传true）
-@property (nonatomic, assign) BOOL isTemp;
-
 /// 小程序是否已安装 （其实类似收藏）
 @property (nonatomic, assign) BOOL installed;
 
