@@ -27,9 +27,16 @@ SDK secret
 
 /**
  服务器地址，客户部署的后台地址，必填
- * 例：https://api.finogeeks.com
+ * 例：https://www.finclip.com
  */
 @property (nonatomic, copy) NSString *apiServer;
+
+/**
+ apm统计服务器的地址
+ 如果不填，则默认与apiServer一致。
+ 例：https://www.finclip.com
+ */
+@property (nonatomic, copy) NSString *apmServer;
 
 /**
  api的版本， 必填
