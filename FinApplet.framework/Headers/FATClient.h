@@ -13,7 +13,7 @@
 #import "FATConstant.h"
 #import "FATAppletInfo.h"
 #import "FATAppletDelegate.h"
-#import "FATAppletNativeProtocol.h"
+#import "IFATNativeViewManager.h"
 #import "FATAppletRequest.h"
 #import "FATError.h"
 
@@ -31,6 +31,9 @@
 @property (nonatomic, assign) BOOL enableLog;
 
 @property (nonatomic, weak) id<FATAppletDelegate> delegate;
+
+/** nativeView 控制器*/
+@property (nonatomic, strong) id<IFATNativeViewManager> nativeViewManager;
 
 
 + (instancetype)sharedClient;
@@ -65,6 +68,10 @@
 /// 处理URL
 /// @param URL 具体的URL路由
 - (BOOL)handleOpenURL:(NSURL *)URL;
+
+/// 处理Universal Link
+/// @param URL Universal Link URL
+- (BOOL)handleOpenUniversalLinkURL:(NSURL *)URL;
 
 #pragma mark - start applet api
 /**
@@ -259,6 +266,11 @@
 - (void)fat_callWebApi:(NSString *)eventName paramString:(NSString *)paramString pageId:(NSNumber *)pageId handler:(void (^)(id result, NSError *error))hanler;
 
 #pragma mark - tool api
+/**
+ 向service 发送事件
+ */
+- (void)sendToCurentServiceEvent:(NSString *)eventName param:(NSDictionary *)param;
+
 /**
  保存文件到小程序的缓存路径
  

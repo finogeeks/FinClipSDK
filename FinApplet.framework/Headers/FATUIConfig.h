@@ -155,5 +155,9 @@
 */
 @property (nonatomic, copy) NSString *appendingCustomUserAgent;
 
+/** 注入小程序统称appletText字符串，默认为小程序。
+*/
+@property (nonatomic, copy) NSString *appletText;
+
 @end
 

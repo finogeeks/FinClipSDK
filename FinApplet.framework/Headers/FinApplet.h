@@ -21,3 +21,5 @@
 #import "FATAppletMenuProtocol.h"
 #import "FATWeakScriptMessageDelegate.h"
 #import "FATLogManager.h"
+#import "IFATNativeViewManager.h"
+#import "FATAppletNativeProtocol.h"
