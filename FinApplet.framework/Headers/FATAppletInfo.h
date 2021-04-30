@@ -30,15 +30,8 @@
 /// 小程序描述
 @property (nonatomic, copy) NSString *appDescription;
 
-/// 小程序zip在本地的相对路径
-@property (nonatomic, copy) NSString *appPath;
-
 /// 小程序版本号
 @property (nonatomic, copy) NSString *appVersion;
-
-@property (nonatomic, copy) NSString *appTag;
-
-@property (nonatomic, copy) NSString *appGroup;
 
 /// 小程序封面图
 @property (nonatomic, copy) NSString *appThumbnail;
@@ -50,19 +43,10 @@
 @property (nonatomic, copy) NSString *groupName;
 
 /// 小程序是否正在灰度
-@property (nonatomic, strong) NSNumber *isGrayRelease;
+@property (nonatomic, assign) BOOL isGrayRelease;
 
 /// 小程序版本索引
 @property (nonatomic, strong) NSNumber *sequence;
-
-/// 服务器地址
-@property (nonatomic, copy) NSString *apiServer;
-
-/// 指定的基础库版本
-@property (nonatomic, copy) NSString *libraryVersion;
-
-/// 最近一次打开的时间戳
-@property (nonatomic, assign) long long latestOpenTs;
 
 /// 是否是临时小程序，（IDE扫码预览时传true）
 @property (nonatomic, assign) BOOL isTemp;
@@ -70,19 +54,13 @@
 /// 小程序是否已安装 （其实类似收藏）
 @property (nonatomic, assign) BOOL installed;
 
-@property (nonatomic, copy) NSDictionary *info;
-
-/**
- 小程序的原数据
- */
-@property (nonatomic, copy) NSDictionary *originalInfo;
+/// 服务器地址
+@property (nonatomic, copy) NSString *apiServer;
 
 /**
  小程序启动时的启动参数
  */
 @property (nonatomic, copy) NSDictionary *startParams;
-
-
 
 @end
 

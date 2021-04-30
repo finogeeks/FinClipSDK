@@ -309,6 +309,14 @@
  */
 - (void)getCurrentWebViewUserAgentWithCompletion:(void (^)(NSString *userAgent, NSError * error))completionHandler;
 
+/**
+ 国密SM3加密
+ 
+ @param plainText  加密明文
+ @return 加密密文
+ */
+- (NSString *)getSM3String:(NSString *)plainText;
+
 #pragma mark - new apis
 
 /// 启动小程序
