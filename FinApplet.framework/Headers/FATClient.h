@@ -15,6 +15,7 @@
 #import "FATAppletDelegate.h"
 #import "IFATNativeViewManager.h"
 #import "FATAppletRequest.h"
+#import "FATSearchAppletRequest.h"
 #import "FATError.h"
 
 @interface FATClient : NSObject
@@ -225,15 +226,35 @@
 - (void)closeCurrentApplet:(BOOL)animated;
 
 /**
+关闭当前的小程序
+@param animated 是否显示动画
+@param completion 关闭完成的回调
+*/
+- (void)closeCurrentApplet:(BOOL)animated completion:(dispatch_block_t)completion;
+
+/**
 关闭打开的指定小程序
 @param animated 是否显示动画
 */
 - (void)closeApplet:(NSString *)appletId animated:(BOOL)animated;
 
 /**
+关闭打开的指定小程序
+@param animated 是否显示动画
+@param completion 关闭完成的回调
+*/
+- (void)closeApplet:(NSString *)appletId animated:(BOOL)animated completion:(dispatch_block_t)completion;
+
+/**
 关闭当前打开的所有小程序
 */
 - (void)closeAllApplets;
+
+/**
+关闭当前打开的所有小程序
+@param completion 关闭完成的回调
+*/
+- (void)closeAllAppletsWithCompletion:(dispatch_block_t)completion;
 
 #pragma mark - recent used applet api
 /**
@@ -328,5 +349,12 @@
         InParentViewController:(UIViewController *)parentVC
                     completion:(void (^)(BOOL result, FATError *error))completion
                closeCompletion:(dispatch_block_t)closeCompletion;
+
+#pragma mark - search applet
+/// 搜索小程序
+/// @param request 搜索的request
+/// @param completion 搜索结果
+- (void)searchAppletsWithRequest:(FATSearchAppletRequest *)request
+                     completion:(void (^)(NSDictionary *result, FATError *aError))completion;
 
 @end

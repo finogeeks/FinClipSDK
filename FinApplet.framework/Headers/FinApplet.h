@@ -23,3 +23,4 @@
 #import "FATLogManager.h"
 #import "IFATNativeViewManager.h"
 #import "FATAppletNativeProtocol.h"
+#import "FATSearchAppletRequest.h"

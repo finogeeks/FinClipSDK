@@ -85,6 +85,12 @@ apm 统计的扩展信息
 
 @property (nonatomic, strong) NSDictionary *theme;
 
+/**
+ * 数据上报时，是否压缩请求的数据
+ * 默认为NO
+ */
+@property (nonatomic, assign) BOOL enableApmDataCompression;
+
 #pragma mark - method
 /// 创建config对象
 /// @param appSecret appSecret，也就是SDK Secret
