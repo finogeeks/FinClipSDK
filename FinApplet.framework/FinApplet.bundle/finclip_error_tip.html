@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>非备案域名</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div style="margin-top: 90px;margin-bottom: 30px;">
+      <svg width="75px" height="75px" viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+        <title>形状</title>
+        <desc>Created with Sketch.</desc>
+        <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <path d="M75,150 C33.5775,150 0,116.4225 0,75 C0,33.5775 33.5775,0 75,0 C116.4225,0 150,33.5775 150,75 C150,116.4225 116.4225,150 75,150 Z M67.5,105 C67.5,109.142136 70.8578644,112.5 75,112.5 C79.1421356,112.5 82.5,109.142136 82.5,105 C82.5,100.857864 79.1421356,97.5 75,97.5 C70.8578644,97.5 67.5,100.857864 67.5,105 Z M67.5611998,40.559988 L68.4411998,84.559988 C68.4738627,86.1931355 69.8071258,87.5 71.4405999,87.5 L78.5594001,87.5 C80.1928742,87.5 81.5261373,86.1931355 81.5588002,84.559988 L82.4388002,40.559988 C82.4719307,38.903465 81.155911,37.5337303 79.4993881,37.5005998 C79.4793946,37.5002 79.4593976,37.5 79.4394001,37.5 L70.5605999,37.5 C68.9037457,37.5 67.5605999,38.8431458 67.5605999,40.5 C67.5605999,40.5199975 67.5607999,40.5399945 67.5611998,40.559988 Z" id="形状" fill="#C9C9C9" fill-rule="nonzero"></path>
+        </g>
+      </svg>
+    </div>
+    <div style="line-height: 40px;font-size: 20px;" id="title">
+        无法打开域名
+    </div>
+    <div style="color: #828282;padding: 0 15px;" id="subscription">
+        不支持打开未备案的域名<span id="wvurl"></span>，请前往平台完成域名配置。
+    </div>
+</body>
+<script>
+  const getSearchObj = () => {
+    let searchObj = {}
+    const searchStr = location.search.split("?")[1]
+    if(searchStr !== undefined) {
+      const searchList = searchStr.split('&')
+      searchList.forEach(item => {
+        let key = item.split('=')[0]
+        let value = item.split('=')[1]
+        searchObj[key] = value
+      })
+    }
+    return searchObj
+  }
+
+  let type = getSearchObj().type || 0
+  type = parseInt(type)
+  const titleElem = document.querySelector('#title')
+  const subscriptionElem = document.querySelector('#subscription')
+  let pageTitle = ''
+  let title = ''
+  let subscription = ''
+  switch (type) {
+    case 1:
+      pageTitle = '黑名单域名'
+      title = '无法打开域名'
+      subscription = '当前访问的域名已被运营端放入黑名单'
+      break;
+    case 2: 
+      pageTitle = '页面不存在  '
+      title = '无法打开页面'
+      subscription = '该页面不存在，请与小程序开发者联系'
+      break
+    default:
+      break
+  }
+
+  if(type !== 0) {
+    document.title = pageTitle
+    titleElem.innerHTML = title
+    subscriptionElem.innerHTML = subscription
+  }
+</script>
+<script>
+!(function (global) {
+  const userAgent = global.navigator.userAgent;
+  const isIOS =  userAgent.indexOf('iPhone') !== -1;
+
+  const callbacks = {};
+  let callbackIndex = 0;
+
+  const handlers = {};
+
+  const invokeHandler = function(event, paramsString, callbackId) {
+    if (isIOS) {
+      global.webkit.messageHandlers.webInvokeHandler.postMessage({
+        C: event,
+        paramsString: paramsString,
+        callbackId: callbackId
+      });
+    } else {
+      const jsCoreHandleResult = FinChatJSCore.webInvokeHandler(event, paramsString, callbackId);
+      if (typeof jsCoreHandleResult !== 'undefined' && typeof callbacks[callbackId] === 'function' && jsCoreHandleResult !== '') {
+        try {
+          jsCoreHandleResult = JSON.parse(jsCoreHandleResult)
+        } catch(e) {
+          jsCoreHandleResult = {}
+        }
+        callbacks[callbackId](jsCoreHandleResult),
+        delete callbacks[callbackId]
+      }
+    }
+  };
+
+  const invoke = function(event, params, callback) {
+    // postMessage
+    const paramsString = JSON.stringify(params || {});
+    const callbackId = ++callbackIndex
+    callbacks[callbackId] = callback
+    invokeHandler(event, paramsString, callbackId)
+  };
+
+  const subscribe = function (eventName, handler) {
+    handlers[eventName] = handler
+  };
+
+  const webInvokeCallbackHandler = function (callbackId, params) {
+    const callback = callbacks[callbackId];
+    if (typeof callback === 'function') callback(params);
+    delete callbacks[callbackId]
+  };
+
+  const webSubscribeCallBackHandler = function (eventName, data, webviewId, reportParams) {
+    const handler =  handlers[eventName];
+    if (typeof handler === 'function') {
+      handler(data, webviewId, reportParams)
+    }
+  }
+
+  global.FinChatJSBridge = {
+    invoke,
+    subscribe,
+    webInvokeCallbackHandler,
+    webSubscribeCallBackHandler,
+  }
+})(window)
+
+</script>
+<script>
+  
+window.FinChatJSBridge.invoke('initPage', {}, (pageId) => {
+    window.FinChatJSBridge.invoke('getNonBusinessDomainHtmlParams', { pageId }, (result) => {
+        const imgurl = result.appAvatar;
+        let wvurl = result.url;
+        const idx = wvurl.indexOf('://');
+        if (idx>0) {
+          const idx2 = wvurl.indexOf('/', (idx+3));
+          if (idx2 > 0) {
+            wvurl = wvurl.substring(0,idx2)
+          }
+        } else {
+          const idx2 = wvurl.indexOf('/');
+          if (idx2 > 0) {
+            wvurl = wvurl.substring(0,idx2)
+          }
+        }
+        document.getElementById('wvurl').innerHTML = wvurl.replace(/<script>/g,"").replace(/<\/script>/g,"")
+    });
+});
+
+</script>
+</html>

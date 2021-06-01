@@ -67,6 +67,12 @@ SDK指纹，证联服务器时，必填
 @property (nonatomic, assign) BOOL disableAuthorize;
 
 /**
+是否禁用SDK的监管接口API（默认开启：NO）
+如果设置为YES，则SDK禁用监管接口API
+*/
+@property (nonatomic, assign) BOOL disableGetSuperviseInfo;
+
+/**
 后台自动检查更新的小程序个数
 取值范围：0~50。0代表不检查更新；不设置默认是3。
 */
