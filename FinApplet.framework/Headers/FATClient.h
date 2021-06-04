@@ -297,14 +297,14 @@
  
  @param fileData 文件的二进制数据
  @param fileName 文件名，需要保证文件名唯一，否则可能会覆盖
- @return 文件的本地路径，例如:finfile://tmp_fdfdkfjdkfjdkjfdkjf.jpg
+ @return 文件的本地路径，例如:finfile://tmp_b118e2e5e2618d4d8bbbb7b0a3ad806a.jpg
  */
 - (NSString *)saveFile:(NSData *)fileData fileName:(NSString *)fileName;
 
 /**
 将文件路径转为绝对路径
 如果是 网络文件路径，则直接返回。
-如果是小程序中的路径，比如finfile://tmp_fdfdkfjdkfjdkjfdkjf.jpg ，则会转为本地绝对路径
+如果是小程序中的路径，比如finfile://tmp_b118e2e5e2618d4d8bbbb7b0a3ad806a.jpg ，则会转为本地绝对路径
 如果是小程序包中的文件路径，比如image/xxx.jpg，也会转为绝对路径
 其他情况则返回传入的路径
 
