@@ -9,6 +9,11 @@
 
 #import <Foundation/Foundation.h>
 
+@interface FATAppletSimpleInfo : NSObject
+/// 小程序id
+@property (nonatomic, copy) NSString *appId;
+@end
+
 //该模型是自动更新数据库表结构的，升级字段的时候 只要直接加属性就好了
 @interface FATAppletInfo : NSObject
 
@@ -53,6 +58,9 @@
 
 /// 是否是体验小程序
 @property (nonatomic, assign) BOOL isTrial;
+
+/// 是否是开发版小程序
+@property (nonatomic, assign) BOOL isDev;
 
 /// 小程序是否已安装 （其实类似收藏）
 @property (nonatomic, assign) BOOL installed;
