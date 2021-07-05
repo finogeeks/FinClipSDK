@@ -367,4 +367,13 @@
 - (void)searchAppletsWithRequest:(FATSearchAppletRequest *)request
                      completion:(void (^)(NSDictionary *result, FATError *aError))completion;
 
+
+///  解析微信小程序二维码，得到凡泰小程序信息
+/// @param qrCode  微信二维码
+/// @param apiServer  解析服务器url
+/// @param completion 结果回调
+- (void)parseAppletInfoFromWXQrCode:(NSString *)qrCode apiServer:(NSString *)apiServer completion:(void (^)(FATAppletSimpleInfo *appInfo, FATError *aError))completion;
+
+
+
 @end

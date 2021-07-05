@@ -70,6 +70,11 @@
 @property (nonatomic, copy) NSString *info;
 
 /**
+是否由管理小程序打开
+*/
+@property (nonatomic, assign) BOOL isManage;
+
+/**
 打开小程序时的转场动画方式
 */
 @property (nonatomic, assign) FATTranstionStyle transitionStyle;
