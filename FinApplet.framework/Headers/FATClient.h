@@ -36,7 +36,6 @@
 /** nativeView 控制器*/
 @property (nonatomic, strong) id<IFATNativeViewManager> nativeViewManager;
 
-
 + (instancetype)sharedClient;
 
 - (BOOL)initWithConfig:(FATConfig *)config error:(NSError **)error;
@@ -92,9 +91,9 @@
  @param completion 完成的回调，失败时会返回error信息
  */
 - (void)startRemoteApplet:(NSString *)appletId
-              startParams:(NSDictionary *)startParams
-   InParentViewController:(UIViewController *)parentVC
-               completion:(void (^)(BOOL result, NSError *error))completion;
+               startParams:(NSDictionary *)startParams
+    InParentViewController:(UIViewController *)parentVC
+                completion:(void (^)(BOOL result, NSError *error))completion;
 
 /**
  打开服务器上的小程序，带启动动画参数
@@ -113,10 +112,10 @@
  @param completion 完成的回调，失败时会返回error信息
  */
 - (void)startRemoteApplet:(NSString *)appletId
-              startParams:(NSDictionary *)startParams
-   InParentViewController:(UIViewController *)parentVC
-          transitionStyle:(FATTranstionStyle)transitionStyle
-               completion:(void (^)(BOOL result, NSError *error))completion;
+               startParams:(NSDictionary *)startParams
+    InParentViewController:(UIViewController *)parentVC
+           transitionStyle:(FATTranstionStyle)transitionStyle
+                completion:(void (^)(BOOL result, NSError *error))completion;
 
 /**
  打开服务器上的小程序，带启动动画参数、关闭回调
@@ -137,12 +136,12 @@
  @param closeCompletion 关闭小程序的回调
  */
 - (void)startRemoteApplet:(NSString *)appletId
-              startParams:(NSDictionary *)startParams
-   InParentViewController:(UIViewController *)parentVC
-          transitionStyle:(FATTranstionStyle)transitionStyle
-                 animated:(BOOL)animated
-               completion:(void (^)(BOOL result, NSError *error))completion
-          closeCompletion:(dispatch_block_t)closeCompletion;
+               startParams:(NSDictionary *)startParams
+    InParentViewController:(UIViewController *)parentVC
+           transitionStyle:(FATTranstionStyle)transitionStyle
+                  animated:(BOOL)animated
+                completion:(void (^)(BOOL result, NSError *error))completion
+           closeCompletion:(dispatch_block_t)closeCompletion;
 
 /**
  打开服务器上的小程序，带提交序列、动画参数
@@ -162,11 +161,11 @@
  @param completion 完成的回调，失败时会返回error信息
  */
 - (void)startRemoteApplet:(NSString *)appletId
-                 sequence:(NSNumber *)sequence
-              startParams:(NSDictionary *)startParams
-   InParentViewController:(UIViewController *)parentVC
-                 animated:(BOOL)animated
-               completion:(void (^)(BOOL result, NSError *error))completion;
+                  sequence:(NSNumber *)sequence
+               startParams:(NSDictionary *)startParams
+    InParentViewController:(UIViewController *)parentVC
+                  animated:(BOOL)animated
+                completion:(void (^)(BOOL result, NSError *error))completion;
 
 /**
  打开服务器上的小程序，带提交序列、动画参数
@@ -187,12 +186,12 @@
  @param completion 完成的回调，失败时会返回error信息
  */
 - (void)startRemoteApplet:(NSString *)appletId
-                 sequence:(NSNumber *)sequence
-              startParams:(NSDictionary *)startParams
-   InParentViewController:(UIViewController *)parentVC
-          transitionStyle:(FATTranstionStyle)transitionStyle
-                 animated:(BOOL)animated
-               completion:(void (^)(BOOL result, NSError *error))completion;
+                  sequence:(NSNumber *)sequence
+               startParams:(NSDictionary *)startParams
+    InParentViewController:(UIViewController *)parentVC
+           transitionStyle:(FATTranstionStyle)transitionStyle
+                  animated:(BOOL)animated
+                completion:(void (^)(BOOL result, NSError *error))completion;
 
 /// 当前正在使用的小程序
 - (FATAppletInfo *)currentApplet;
@@ -307,7 +306,7 @@
 /**
  获取小程序页面的userAgent
  */
-- (void)getCurrentWebViewUserAgentWithCompletion:(void (^)(NSString *userAgent, NSError * error))completionHandler;
+- (void)getCurrentWebViewUserAgentWithCompletion:(void (^)(NSString *userAgent, NSError *error))completionHandler;
 
 /**
  国密SM3加密
@@ -344,15 +343,12 @@
 /// @param request 搜索的request
 /// @param completion 搜索结果
 - (void)searchAppletsWithRequest:(FATSearchAppletRequest *)request
-                     completion:(void (^)(NSDictionary *result, FATError *aError))completion;
-
+                      completion:(void (^)(NSDictionary *result, FATError *aError))completion;
 
 ///  解析微信小程序二维码，得到凡泰小程序信息
 /// @param qrCode  微信二维码
 /// @param apiServer  解析服务器url
 /// @param completion 结果回调
 - (void)parseAppletInfoFromWXQrCode:(NSString *)qrCode apiServer:(NSString *)apiServer completion:(void (^)(FATAppletSimpleInfo *appInfo, FATError *aError))completion;
-
-
 
 @end

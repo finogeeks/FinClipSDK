@@ -13,7 +13,7 @@
 
 typedef NS_ENUM(NSUInteger, FATLogFormatType) {
     FATLogFormatTypeSystemLog = 0,
-    FATLogFormatTypeConsole,//暂时没用
+    FATLogFormatTypeConsole, //暂时没用
     FATLogFormatTypeFile,
 };
 
@@ -39,7 +39,6 @@ typedef NS_ENUM(NSUInteger, FATLogLevel) {
                      timeInterval:(NSTimeInterval)timeInterval;
 @end
 
-
 @interface FATLogEngine : NSObject
 - (void)addDriver:(FATLoggerDriver *)driver;
 
@@ -49,7 +48,7 @@ typedef NS_ENUM(NSUInteger, FATLogLevel) {
 
 - (void)logWithType:(FATLogType)type tag:(NSString *)tag message:(NSString *)message timeInterval:(NSTimeInterval)timeInterval;
 
-- (NSArray <FATLoggerDriver *>*)allDrivers;
+- (NSArray<FATLoggerDriver *> *)allDrivers;
 @end
 
 @interface FATLoggerDriver : NSObject
@@ -64,7 +63,6 @@ typedef NS_ENUM(NSUInteger, FATLogLevel) {
 - (void)logWithType:(FATLogType)type tag:(NSString *)tag message:(NSString *)message timeInterval:(NSTimeInterval)timeInterval;
 @end
 
-
 @interface FATLogFormatter : NSObject <FATFormatable>
 + (instancetype)formatterWithType:(FATLogFormatType)type;
 + (instancetype)SystemLogFormatter;
@@ -73,7 +71,6 @@ typedef NS_ENUM(NSUInteger, FATLogLevel) {
 
 - (instancetype)initWithType:(FATLogFormatType)type;
 @end
-
 
 @interface FATDateFormatter : NSObject
 + (instancetype)sharedInstance;

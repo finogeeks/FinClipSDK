@@ -55,7 +55,6 @@
 
 @end
 
-
 /// 小程序解密请求（二维码打开小程序）
 @interface FATAppletDecryptRequest : NSObject
 

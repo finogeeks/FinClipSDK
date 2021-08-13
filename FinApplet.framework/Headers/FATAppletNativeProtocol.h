@@ -18,8 +18,7 @@
  https://developers.weixin.qq.com/miniprogram/dev/component/live-pusher.html
  */
 
-typedef void(^FATNativeCallback)(BOOL isSuccess,NSDictionary<NSString *, id>*result);
-
+typedef void (^FATNativeCallback)(BOOL isSuccess, NSDictionary<NSString *, id> *result);
 
 @protocol FATAppletNativeViewProtocol <NSObject>
 
@@ -81,9 +80,7 @@ typedef void(^FATNativeCallback)(BOOL isSuccess,NSDictionary<NSString *, id>*res
 - (void)liveplayerSnapshot:(NSDictionary *)param completion:(FATNativeCallback)callBack;
 - (void)liveplayerStop:(NSDictionary *)param completion:(FATNativeCallback)callBack;
 
-
 @end
-
 
 @protocol FATAppletNativeLivePusherProtocol <FATAppletNativeViewProtocol>
 /*
@@ -137,6 +134,5 @@ typedef void(^FATNativeCallback)(BOOL isSuccess,NSDictionary<NSString *, id>*res
 - (void)livePusherSwitchCamera:(NSDictionary *)param completion:(FATNativeCallback)callBack;
 - (void)livePusherStartPreview:(NSDictionary *)param completion:(FATNativeCallback)callBack;
 - (void)livePusherToggleTorch:(NSDictionary *)param completion:(FATNativeCallback)callBack;
-
 
 @end

@@ -86,9 +86,9 @@
  点击自定义菜单时，会触发的事件（新版）
  只有实现了该代理方法，才会触发【-clickCustomItemMenuWithInfo:completion:】
  @param contentInfo 分享信息
+ @param appletInfo 小程序信息
  @param completion 分享回调（小程序分享回调：1.【code】回调状态码；2.【result】回传给小程序的回调信息）
  */
-- (void)clickCustomItemMenuWithInfo:(NSDictionary *)contentInfo completion:(void (^)(FATExtensionCode code, NSDictionary *result))completion;
+- (void)clickCustomItemMenuWithInfo:(NSDictionary *)contentInfo inApplet:(FATAppletInfo *)appletInfo completion:(void (^)(FATExtensionCode code, NSDictionary *result))completion;
 
 @end
-

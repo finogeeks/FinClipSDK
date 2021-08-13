@@ -10,7 +10,7 @@
 
 @protocol IFATNativeViewManager <NSObject>
 
-@property (nonatomic, strong) Class<FATAppletNativeCameraProtocol>     cameraClass;
+@property (nonatomic, strong) Class<FATAppletNativeCameraProtocol> cameraClass;
 @property (nonatomic, strong) Class<FATAppletNativeLivePlayerProtocol> livePlayerClass;
 @property (nonatomic, strong) Class<FATAppletNativeLivePusherProtocol> livePusherClass;
 

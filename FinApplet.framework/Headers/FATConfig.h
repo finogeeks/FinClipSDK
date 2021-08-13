@@ -97,6 +97,12 @@ apm 统计的扩展信息
  */
 @property (nonatomic, assign) BOOL enableApmDataCompression;
 
+/**
+是否需要接口加密验证（初始化单服务器时使用）
+默认为不开启，当设置为YES时开启，接口返回加密数据并处理
+*/
+@property (nonatomic, assign) BOOL encryptServerData;
+
 #pragma mark - method
 /// 创建config对象
 /// @param appSecret appSecret，也就是SDK Secret

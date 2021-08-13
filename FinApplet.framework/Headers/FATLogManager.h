@@ -7,27 +7,28 @@
 
 #import "FATLogEngine.h"
 
-#define FATLogWithType(type, atag, frmt, ...) \
-do {[[FATLogManager sharedInstance] logWithType:type tag:atag message:[NSString stringWithFormat:(frmt), ##__VA_ARGS__]];} while(0)
+#define FATLogWithType(type, atag, frmt, ...)                                                                                 \
+    do {                                                                                                                      \
+        [[FATLogManager sharedInstance] logWithType:type tag:atag message:[NSString stringWithFormat:(frmt), ##__VA_ARGS__]]; \
+    } while (0)
 
 #define FATLogError(frmt, ...) \
-FATLogWithType(FATLogTypeError, nil, frmt, ##__VA_ARGS__)
+    FATLogWithType(FATLogTypeError, nil, frmt, ##__VA_ARGS__)
 #define FATLogWarning(frmt, ...) \
-FATLogWithType(FATLogTypeWarning, nil, frmt, ##__VA_ARGS__)
+    FATLogWithType(FATLogTypeWarning, nil, frmt, ##__VA_ARGS__)
 #define FATLogInfo(frmt, ...) \
-FATLogWithType(FATLogTypeInfo, nil, frmt, ##__VA_ARGS__)
+    FATLogWithType(FATLogTypeInfo, nil, frmt, ##__VA_ARGS__)
 #define FATLogDebug(frmt, ...) \
-FATLogWithType(FATLogTypeDebug, nil, frmt, ##__VA_ARGS__)
+    FATLogWithType(FATLogTypeDebug, nil, frmt, ##__VA_ARGS__)
 
 #define FATLogTagError(tag, frmt, ...) \
-FATLogWithType(FATLogTypeError, tag, frmt, ##__VA_ARGS__)
+    FATLogWithType(FATLogTypeError, tag, frmt, ##__VA_ARGS__)
 #define FATLogTagWarning(tag, frmt, ...) \
-FATLogWithType(FATLogTypeWarning, tag, frmt, ##__VA_ARGS__)
+    FATLogWithType(FATLogTypeWarning, tag, frmt, ##__VA_ARGS__)
 #define FATLogTagInfo(tag, frmt, ...) \
-FATLogWithType(FATLogTypeInfo, tag, frmt, ##__VA_ARGS__)
+    FATLogWithType(FATLogTypeInfo, tag, frmt, ##__VA_ARGS__)
 #define FATLogTagDebug(tag, frmt, ...) \
-FATLogWithType(FATLogTypeDebug, tag, frmt, ##__VA_ARGS__)
-
+    FATLogWithType(FATLogTypeDebug, tag, frmt, ##__VA_ARGS__)
 
 @class FATLoggerDriver;
 
@@ -66,7 +67,6 @@ FATLogWithType(FATLogTypeDebug, tag, frmt, ##__VA_ARGS__)
  */
 - (void)disableFileLog;
 
-
 /**
  Enable console log. We suggest don't Console Log when SystemLog is enabled.
  启用控制台log。我们建议这个功能不要同SystemLog同时开启。
@@ -90,7 +90,6 @@ FATLogWithType(FATLogTypeDebug, tag, frmt, ##__VA_ARGS__)
 // 关闭浏览器log调试功能。
 // */
 //- (void)disableRemoteConsole;
-
 
 /**
  All the logs in memory will be written in files immediately.

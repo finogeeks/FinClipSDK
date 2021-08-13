@@ -9,20 +9,20 @@
 #ifndef FATConstant_h
 #define FATConstant_h
 
-typedef NS_ENUM(NSInteger,FATExtensionCode) {
-    FATExtensionCodeCancel  = -1,  //取消
-    FATExtensionCodeSuccess = 0,   //成功
-    FATExtensionCodeFailure = 1,   //失败
+typedef NS_ENUM(NSInteger, FATExtensionCode) {
+    FATExtensionCodeCancel = -1, //取消
+    FATExtensionCodeSuccess = 0, //成功
+    FATExtensionCodeFailure = 1, //失败
 };
 
 typedef NS_ENUM(NSUInteger, FATTranstionStyle) {
-    FATTranstionStyleUp,            // 页面从下往上弹出，类似present效果
-    FATTranstionStylePush,          // 页面从右往左弹出，类似push效果
+    FATTranstionStyleUp,   // 页面从下往上弹出，类似present效果
+    FATTranstionStylePush, // 页面从右往左弹出，类似push效果
 };
 
 typedef NS_ENUM(NSUInteger, FATApiCryptType) {
-    FATApiCryptTypeMD5,     // MD5
-    FATApiCryptTypeSM,      // 国密MD5
+    FATApiCryptTypeMD5, // MD5
+    FATApiCryptTypeSM,  // 国密MD5
 };
 
 typedef NS_ENUM(NSUInteger, FATMoreViewStyle) {
@@ -43,8 +43,16 @@ typedef NS_ENUM(NSUInteger, FATCrashProtectionType) {
     FATCrashProtectionTypeNotificationCrash = 1 << 4,
     FATCrashProtectionTypeContainerCrash = 1 << 5,
     FATCrashProtectionTypeStringCrash = 1 << 6,
-    
+
     FATCrashProtectionTypeAll = FATCrashProtectionTypeUnrecognizedSelector | FATCrashProtectionTypeKVOCrash | FATCrashProtectionTypeTimerCrash | FATCrashProtectionTypeNotificationCrash | FATCrashProtectionTypeContainerCrash | FATCrashProtectionTypeStringCrash
+};
+
+typedef NS_ENUM(NSUInteger, FATAppletVersionType) {
+    FATAppletVersionTypeRelease,            // 正式版，默认值
+    FATAppletVersionTypeTrial,              // 体验版
+    FATAppletVersionTypeTemporary,          // 临时版，IDE预览版
+    FATAppletVersionTypeReview,             // 审核版
+    FATAppletVersionTypeDevelopment         // 开发版
 };
 
 /**
@@ -56,15 +64,13 @@ typedef NS_ENUM(NSUInteger, FATCrashProtectionType) {
 typedef void (^FATExtensionApiCallback)(FATExtensionCode code, NSDictionary<NSString *, NSObject *> *result);
 
 #pragma mark - 启动小程序时的启动参数
-typedef NSString* FATStartParamKey NS_REFINED_FOR_SWIFT;
+typedef NSString *FATStartParamKey NS_REFINED_FOR_SWIFT;
 
 FOUNDATION_EXTERN FATStartParamKey const FATStartParamPath;
 FOUNDATION_EXTERN FATStartParamKey const FATStartParamQuery;
 FOUNDATION_EXTERN FATStartParamKey const FATStartParamScene;
 
-
-
-typedef NSString* FATShareMediaType NS_REFINED_FOR_SWIFT;
+typedef NSString *FATShareMediaType NS_REFINED_FOR_SWIFT;
 
 FOUNDATION_EXTERN FATShareMediaType const FATShareMediaTypeText;
 FOUNDATION_EXTERN FATShareMediaType const FATShareMediaTypeImage;

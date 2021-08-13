@@ -10,7 +10,6 @@
 
 #import "FATConstant.h"
 
-
 @interface FATStoreConfig : NSObject
 
 /**
@@ -52,5 +51,11 @@ SDK指纹
 证联环境(https://open.fdep.cn/) 时必填，其他环境的不用填
 */
 @property (nonatomic, copy) NSString *fingerprint;
+
+/**
+是否需要接口加密验证（初始化多服务器时使用）
+默认为不开启，当设置为YES时开启，接口返回加密数据并处理
+*/
+@property (nonatomic, assign) BOOL encryptServerData;
 
 @end

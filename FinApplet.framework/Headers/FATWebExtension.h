@@ -10,7 +10,6 @@
 
 #import "FATConstant.h"
 
-
 @interface FATWebExtension : NSObject
 
 /**
@@ -24,4 +23,3 @@
 + (NSDictionary *)webExtensionApis;
 
 @end
-

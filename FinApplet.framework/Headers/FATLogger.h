@@ -14,7 +14,6 @@
 - (void)log:(NSString *)logString;
 @end
 
-
 //即NS.Log
 @interface FATSystemLogger : NSObject <FATLogger>
 

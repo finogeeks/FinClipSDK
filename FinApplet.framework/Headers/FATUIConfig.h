@@ -160,4 +160,3 @@
 @property (nonatomic, copy) NSString *appletText;
 
 @end
-

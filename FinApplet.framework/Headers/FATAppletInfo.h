@@ -6,8 +6,8 @@
 //  Copyright © 2019 finogeeks. All rights reserved.
 //
 
-
 #import <Foundation/Foundation.h>
+#import "FATConstant.h"
 
 @interface FATAppletSimpleInfo : NSObject
 /// 小程序id
@@ -64,5 +64,9 @@
  */
 @property (nonatomic, copy) NSDictionary *startParams;
 
-@end
+/**
+ * 小程序类型（线上版、体验版、临时版、审核版、开发版）
+ */
+@property (nonatomic, assign, readonly) FATAppletVersionType appletVersionType;
 
+@end
