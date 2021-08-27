@@ -48,11 +48,11 @@ typedef NS_ENUM(NSUInteger, FATCrashProtectionType) {
 };
 
 typedef NS_ENUM(NSUInteger, FATAppletVersionType) {
-    FATAppletVersionTypeRelease,            // 正式版，默认值
-    FATAppletVersionTypeTrial,              // 体验版
-    FATAppletVersionTypeTemporary,          // 临时版，IDE预览版
-    FATAppletVersionTypeReview,             // 审核版
-    FATAppletVersionTypeDevelopment         // 开发版
+    FATAppletVersionTypeRelease,    // 正式版，默认值
+    FATAppletVersionTypeTrial,      // 体验版
+    FATAppletVersionTypeTemporary,  // 临时版，IDE预览版
+    FATAppletVersionTypeReview,     // 审核版
+    FATAppletVersionTypeDevelopment // 开发版
 };
 
 /**

@@ -146,17 +146,31 @@
  */
 @property (nonatomic, assign) BOOL hideForwardMenu;
 
-/** 是否自适应暗黑模式。
+/**
+ 是否自适应暗黑模式。
  如果设置为YES，则更多页面、关于等原生页面会随着手机切换暗黑，也自动调整为暗黑模式
  */
 @property (nonatomic, assign) BOOL autoAdaptDarkMode;
 
-/** 要拼接的userAgent字符串。
+/**
+ 要拼接的userAgent字符串。
 */
 @property (nonatomic, copy) NSString *appendingCustomUserAgent;
 
-/** 注入小程序统称appletText字符串，默认为小程序。
+/**
+ 注入小程序统称appletText字符串，默认为“小程序”。
 */
 @property (nonatomic, copy) NSString *appletText;
+
+/**
+ 是否隐藏转场页的关闭按钮。默认为NO
+ */
+@property (nonatomic, assign) BOOL hideTransitionCloseButton;
+
+/**
+ 是否禁用侧滑关闭小程序的手势。默认为NO
+ 该手势禁用，不影响小程序里页面的侧滑返回上一页的功能
+ */
+@property (nonatomic, assign) BOOL disableSlideCloseAppletGesture;
 
 @end
