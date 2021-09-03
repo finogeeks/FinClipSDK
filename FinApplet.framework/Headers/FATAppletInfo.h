@@ -69,4 +69,10 @@
  */
 @property (nonatomic, assign, readonly) FATAppletVersionType appletVersionType;
 
+/**
+ 小程序启动时使用的加密串
+ 注意：使用加密串打开的方式打开小程序才有，否则为nil
+ */
+@property (nonatomic, copy) NSString *cryptInfo;
+
 @end
