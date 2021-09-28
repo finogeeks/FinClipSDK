@@ -82,4 +82,13 @@ FOUNDATION_EXTERN FATShareMediaType const FATShareMediaTypeMiniProgram;
 // 本地缓存的最近使用的小程序列表变更
 FOUNDATION_EXTERN NSString *const kRecentUsedAppletListDidChangeNotification;
 
+#pragma mark - 小程序生命周期事件通知
+
+//小程序关闭通知，ViewController和View可以监听 userInfo:@{@"appletId":appId}
+FOUNDATION_EXTERN NSString *const FATAppletCloseNotification;
+
+//小程序进入后台 ViewController和View可以监听 userInfo:@{@"appletId":appId}
+FOUNDATION_EXTERN NSString *const FATAppletEnterBackgroundNotification;
+//
+
 #endif /* FATConstant_h */

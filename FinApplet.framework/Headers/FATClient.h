@@ -38,8 +38,15 @@
 
 + (instancetype)sharedClient;
 
+/// 初始化SDK
+/// @param config 配置对象
+/// @param error 初始化失败时返回的error
 - (BOOL)initWithConfig:(FATConfig *)config error:(NSError **)error;
 
+/// 初始化SDK
+/// @param config 配置对象
+/// @param uiConfig UI配置对象
+/// @param error 初始化失败时返回的error
 - (BOOL)initWithConfig:(FATConfig *)config uiConfig:(FATUIConfig *)uiConfig error:(NSError **)error;
 
 /**
@@ -265,10 +272,6 @@
 - (void)fat_callWebApi:(NSString *)eventName paramString:(NSString *)paramString pageId:(NSNumber *)pageId handler:(void (^)(id result, NSError *error))hanler;
 
 #pragma mark - tool api
-/**
- 向service 发送事件
- */
-- (void)sendToCurentServiceEvent:(NSString *)eventName param:(NSDictionary *)param;
 
 /**
  保存文件到小程序的缓存路径

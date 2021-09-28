@@ -38,11 +38,8 @@ SDK secret
  */
 @property (nonatomic, copy) NSString *apmServer;
 
-/**
- api的版本， 必填
- 例：/api/v1
- */
-@property (nonatomic, copy) NSString *apiPrefix;
+/// api的版本（已弃用）
+@property (nonatomic, copy) NSString *apiPrefix __attribute__((deprecated("已弃用，使用后不起作用。")));
 
 /// 小程序SDK中的api加密，默认为MD5
 @property (nonatomic, assign) FATApiCryptType cryptType;
