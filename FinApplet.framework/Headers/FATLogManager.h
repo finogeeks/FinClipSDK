@@ -81,7 +81,7 @@
 //
 ///**
 // Enable the browser log tool. The function requires the authorization of networking.
-// 打开浏览器log调试功能。该功能须要APP网络访问权限。
+// 打开浏览器log调试功能。该功能须要APP网络权限。
 // */
 //- (void)enableRemoteConsole;
 
