@@ -29,7 +29,8 @@ typedef NS_ENUM(NSUInteger, FATErrorCode) {
 
     FATErrorCodeNotTrialAccess = 13000, // 没有体验权限
     FATErrorCodeTrialCanceled = 13001,  // 体验版已取消
-    FATErrorCodeTempExpried = 13001,    // ide临时二维码过期
+    FATErrorCodeTempExpried = 13002,    // ide临时二维码过期
+    FATErrorCodeSameAppID = 13003,      // 相同的小程序ID
 };
 
 @interface FATError : NSError
