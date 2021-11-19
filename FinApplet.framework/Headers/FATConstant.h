@@ -43,8 +43,9 @@ typedef NS_ENUM(NSUInteger, FATCrashProtectionType) {
     FATCrashProtectionTypeNotificationCrash = 1 << 4,
     FATCrashProtectionTypeContainerCrash = 1 << 5,
     FATCrashProtectionTypeStringCrash = 1 << 6,
+    FATCrashProtectionTypeJSONSerializationCrash = 1 << 7,
 
-    FATCrashProtectionTypeAll = FATCrashProtectionTypeUnrecognizedSelector | FATCrashProtectionTypeKVOCrash | FATCrashProtectionTypeTimerCrash | FATCrashProtectionTypeNotificationCrash | FATCrashProtectionTypeContainerCrash | FATCrashProtectionTypeStringCrash
+    FATCrashProtectionTypeAll = FATCrashProtectionTypeUnrecognizedSelector | FATCrashProtectionTypeKVOCrash | FATCrashProtectionTypeTimerCrash | FATCrashProtectionTypeNotificationCrash | FATCrashProtectionTypeContainerCrash | FATCrashProtectionTypeStringCrash | FATCrashProtectionTypeJSONSerializationCrash
 };
 
 typedef NS_ENUM(NSUInteger, FATAppletVersionType) {
