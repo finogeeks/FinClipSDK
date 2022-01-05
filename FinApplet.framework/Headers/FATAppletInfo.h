@@ -75,4 +75,6 @@
  */
 @property (nonatomic, copy) NSString *cryptInfo;
 
+- (NSString *)appletVersionTypeName;
+
 @end

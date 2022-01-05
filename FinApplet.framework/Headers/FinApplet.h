@@ -24,3 +24,5 @@
 #import "IFATNativeViewManager.h"
 #import "FATAppletNativeProtocol.h"
 #import "FATSearchAppletRequest.h"
+#import "FATBaseLoadingView.h"
+#import "FATBaseLoadFailedView.h"

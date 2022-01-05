@@ -64,6 +64,12 @@ SDK指纹，证联服务器时，必填
 @property (nonatomic, assign) BOOL disableAuthorize;
 
 /**
+ 小程序自动申请授权
+ 如果设置为YES，则小程序申请权限时不会弹出用户确认提示框
+ */
+@property (nonatomic, assign) BOOL appletAutoAuthorize;
+
+/**
 是否禁用SDK的监管接口API（默认开启：NO）
 如果设置为YES，则SDK禁用监管接口API
 */
@@ -99,6 +105,18 @@ apm 统计的扩展信息
 默认为不开启，当设置为YES时开启，接口返回加密数据并处理
 */
 @property (nonatomic, assign) BOOL encryptServerData;
+
+/**
+小程序的自定义启动加载页，非必填。
+ 自定义启动加载页必须继承自FATBaseLoadingView
+*/
+@property (nonatomic, copy) NSString *baseLoadingViewClass;
+
+/**
+小程序的自定义启动失败页，非必填。
+ 自定义启动失败页必须继承自FATBaseLoadFailedView
+*/
+@property (nonatomic, copy) NSString *baseLoadFailedViewClass;
 
 #pragma mark - method
 /// 创建config对象

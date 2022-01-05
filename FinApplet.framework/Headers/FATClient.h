@@ -295,6 +295,14 @@
 - (NSString *)fat_absolutePathWithPath:(NSString *)path;
 
 /**
+ 获取小程序内文件的完整路径，或临时文件的完整路径
+ 
+ @param fileName 文件名
+ @return 文件的完整路径
+ */
+- (NSString *)getFileAddressWithfileName:(NSString *)fileName;
+
+/**
  生成当前页面截图
  宽高比是5:4
  */
@@ -340,6 +348,28 @@
                InParentViewController:(UIViewController *)parentVC
                            completion:(void (^)(BOOL result, FATError *error))completion
                       closeCompletion:(dispatch_block_t)closeCompletion;
+
+/// 二维码信息启动小程序
+/// @param request 请求对象
+/// @param parentVC 父页面
+/// @param requestBlock 校验二维码的请求完成的回调
+/// @param completion 完成的回调
+/// @param closeCompletion 关闭小程序时的回调
+- (void)startAppletWithQrCodeRequest:(FATAppletQrCodeRequest *)request
+              inParentViewController:(UIViewController *)parentVC
+                        requestBlock:(void (^)(BOOL result, FATError *error))requestBlock
+                          completion:(void (^)(BOOL result, FATError *error))completion
+                     closeCompletion:(dispatch_block_t)closeCompletion;
+
+/// 启动本地离线小程序
+/// @param request 请求对象
+/// @param parentVC 父页面
+/// @param completion 完成回调
+/// @param closeCompletion 关闭小程序时的回调
+- (void)startLocalAppletWithRequest:(FATLocalAppletRequest *)request
+             inParentViewController:(UIViewController *)parentVC
+                         completion:(void (^)(BOOL result, FATError *error))completion
+                    closeCompletion:(dispatch_block_t)closeCompletion;
 
 #pragma mark - search applet
 /// 搜索小程序
