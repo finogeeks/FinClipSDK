@@ -72,12 +72,22 @@
  */
 - (BOOL)removeAppletFromLocalCache:(NSString *)appletId;
 
-/// 处理URL
-/// @param URL 具体的URL路由
+/*
+ 处理URL
+ @param URL 具体的URL路由
+ URL格式:${scheme}://applet/appid/${appId}?path=${path}&query=${encode过的queryDict}&apiServer=${apiServer}
+ 例如：fatae55433be2f62915://applet/appid/617bb42f530fb30001509b27?path=/packages/d/index&query=key%3Dvalue%26name%3Dtable&apiServer=https://www.finclip.com/
+ 其中，必须有的是scheme和appId，如：fatae55433be2f62915://applet/appid/617bb42f530fb30001509b27
+ */
 - (BOOL)handleOpenURL:(NSURL *)URL;
 
-/// 处理Universal Link
-/// @param URL Universal Link URL
+/*
+ 处理Universal Link
+ @param URL Universal Link URL
+ URL格式:${UniversalLink}?appid=${appId}&path=${path}&query=${encode过的queryDict}&apiServer=${apiServer}
+ 例如:https://www.finclip.com/mop/scattered-page/#/mop-download?appid=xx&query=xxx&path=xxx
+ 其中，必须有的是UniversalLink和appId，如https://www.finclip.com/mop/scattered-page/#/mop-download?appid=xx
+ */
 - (BOOL)handleOpenUniversalLinkURL:(NSURL *)URL;
 
 #pragma mark - start applet api
