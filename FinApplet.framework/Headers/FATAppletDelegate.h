@@ -56,6 +56,41 @@
  */
 - (void)applet:(NSString *)appletId didCloseCompletion:(NSError *)error;
 
+/**
+ 小程序初始化完成，首页加载出来的事件
+ @param appletId 小程序id
+ @param error 错误对象
+ */
+- (void)applet:(NSString *)appletId initCompletion:(NSError *)error;
+
+/**
+ 小程序进入活跃状态的事件
+ @param appletId 小程序id
+ @param error 错误对象
+ */
+- (void)applet:(NSString *)appletId didActive:(NSError *)error;
+
+/**
+ 小程序进入非活跃状态的事件
+ @param appletId 小程序id
+ @param error 错误对象
+ */
+- (void)applet:(NSString *)appletId resignActive:(NSError *)error;
+
+/**
+ 小程序出错的事件
+ @param appletId 小程序id
+ @param error 错误对象
+ */
+- (void)applet:(NSString *)appletId didFail:(NSError *)error;
+
+/**
+ 小程序被销毁的事件
+ @param appletId 小程序id
+ @param error 错误对象
+ */
+- (void)applet:(NSString *)appletId dealloc:(NSError *)error;
+
 #pragma mark - more menu
 
 /**

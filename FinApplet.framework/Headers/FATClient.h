@@ -78,6 +78,7 @@
  URL格式:${scheme}://applet/appid/${appId}?path=${path}&query=${encode过的queryDict}&apiServer=${apiServer}
  例如：fatae55433be2f62915://applet/appid/617bb42f530fb30001509b27?path=/packages/d/index&query=key%3Dvalue%26name%3Dtable&apiServer=https://www.finclip.com/
  其中，必须有的是scheme和appId，如：fatae55433be2f62915://applet/appid/617bb42f530fb30001509b27
+ scheme的构建规则是：fat+${appSecret};如果需要在其他软件中调用本App，还需要把这个scheme新增到target->info->URL types中
  */
 - (BOOL)handleOpenURL:(NSURL *)URL;
 

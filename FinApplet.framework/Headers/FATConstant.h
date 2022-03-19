@@ -56,6 +56,13 @@ typedef NS_ENUM(NSUInteger, FATAppletVersionType) {
     FATAppletVersionTypeDevelopment // 开发版
 };
 
+typedef NS_ENUM(NSUInteger, FATAppletLifeCycle) {
+    FATAppletLifeCycleUnknow,       // 未知阶段
+    FATAppletLifeCycleLaunch,       // 启动阶段
+    FATAppletLifeCycleActive,       // 运行阶段
+    FATAppletLifeCycleBackground,   // 后台阶段
+};
+
 /**
  扩展API处理后的回调
  
