@@ -9,8 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "FATConstant.h"
 
-@interface FATAppletRequest : NSObject
-
+@interface FATAppletBaseRequest : NSObject
 #pragma mark - server info
 
 /**
@@ -32,16 +31,15 @@
 @property (nonatomic, copy) NSString *appName;
 
 /**
+ 小程序图标的网络地址，非必填
+ */
+@property (nonatomic, copy) NSString *appletLogo;
+
+/**
 小程序的启动参数，非必填。
 支持的key，请参考FATStartParamKey
 */
 @property (nonatomic, copy) NSDictionary<FATStartParamKey, NSString *> *startParams;
-
-/**
- 小程序的索引。
- 每提交一次小程序，都会生成一个索引，所以想打开指定版本小程序，就必须传该值
-*/
-@property (nonatomic, strong) NSNumber *sequence;
 
 /**
 打开小程序时的转场动画方式
@@ -53,6 +51,16 @@
 */
 @property (nonatomic, assign) BOOL animated;
 
+@end
+
+@interface FATAppletRequest : FATAppletBaseRequest
+
+/**
+ 小程序的索引。
+ 每提交一次小程序，都会生成一个索引，所以想打开指定版本小程序，就必须传该值
+*/
+@property (nonatomic, strong) NSNumber *sequence;
+
 /**
  离线小程序压缩包路径
  */
@@ -63,11 +71,15 @@
  */
 @property (nonatomic, copy) NSString *offlineFrameworkZipPath;
 
+/// 体验版小程序会带小程序信息
+@property (nonatomic, copy) NSDictionary *trialInfo;
+
 @end
 
 /// 小程序解密请求（二维码打开小程序）
 @interface FATAppletDecryptRequest : NSObject
 
+@property (nonatomic, copy) NSString *appletId; //管理小程序打开体验版，info加密信息中没有带appletId字段
 /**
  加密信息
 */
@@ -105,33 +117,7 @@
 @end
 
 /// 运行本地小程序
-@interface FATLocalAppletRequest : NSObject
-
-/**
- 服务器地址，可是任意唯一标识，必填
- */
-@property (nonatomic, copy) NSString *apiServer;
-
-/**
- 小程序id，需要唯一，必填
- */
-@property (nonatomic, copy) NSString *appletId;
-
-/**
- 小程序名称，非必填
- */
-@property (nonatomic, copy) NSString *appletName;
-
-/**
- 小程序图标的网络地址，非必填
- */
-@property (nonatomic, copy) NSString *appletLogo;
-
-/**
-小程序的启动参数，非必填。
-支持的key，请参考FATStartParamKey
-*/
-@property (nonatomic, copy) NSDictionary<FATStartParamKey, NSString *> *startParams;
+@interface FATLocalAppletRequest : FATAppletBaseRequest
 
 /**
  小程序可访问的域名白名单列表，非必填
@@ -171,15 +157,5 @@
  否则，则每次打开小程序都会使用传入的基础库
  */
 @property (nonatomic, assign) BOOL useFrameworkCache;
-
-/**
-打开小程序时的转场动画方式，非必填
-*/
-@property (nonatomic, assign) FATTranstionStyle transitionStyle;
-
-/**
-是否动画，默认为YES，非必填
-*/
-@property (nonatomic, assign) BOOL animated;
 
 @end

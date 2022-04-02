@@ -270,6 +270,14 @@
  */
 - (BOOL)registerExtensionApi:(NSString *)extApiName handle:(void (^)(id param, FATExtensionApiCallback callback))handler;
 
+/**
+ 注册同步扩展Api
+ @param extApiName 扩展的api名称
+ @param target 实现同步api的类
+ @return 返回注册结果
+ */
+- (BOOL)registerSyncExtensionApi:(NSString *)syncExtApiName target:(id)target;
+
 /// 为HTML 注册要调用的原生 api
 /// @param webApiName 原生api名字
 /// @param handler 回调

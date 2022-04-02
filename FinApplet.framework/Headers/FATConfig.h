@@ -107,6 +107,13 @@ apm 统计的扩展信息
 @property (nonatomic, assign) BOOL encryptServerData;
 
 /**
+ 是否开启小程序的debug模式。
+ 默认为不开启。当设置为YES时开启，所有的小程序都会开启vconsole。
+ 当设置为NO时，开发版、体验版小程序可通过更多菜单里的调试菜单打开vconsole。
+ */
+@property (nonatomic, assign) BOOL enableAppletDebug;
+
+/**
 小程序的自定义启动加载页，非必填。
  自定义启动加载页必须继承自FATBaseLoadingView
 */

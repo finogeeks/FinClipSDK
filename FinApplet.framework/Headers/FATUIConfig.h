@@ -10,6 +10,73 @@
 
 #import "FATConstant.h"
 
+/// 返回首页按钮样式
+@interface FATNavHomeConfig : NSObject
+
+/**
+ 返回首页按钮的宽度
+ */
+@property (nonatomic, assign) CGFloat width;
+
+/**
+ 返回首页按钮的高度
+ */
+@property (nonatomic, assign) CGFloat height;
+
+/**
+ 返回首页按钮的左边距，默认值为10
+ */
+@property (nonatomic, assign) CGFloat leftMargin;
+
+/**
+ 返回首页按钮的圆角半径，默认值为5
+ */
+@property (nonatomic, assign) CGFloat cornerRadius;
+
+/**
+ 返回首页按钮的边框宽度，默认值为0.8
+ */
+@property (nonatomic, assign) CGFloat borderWidth;
+
+/**
+ 浅色返回首页按钮的图片对象，如果不传，会使用默认图标
+ （暗黑模式）
+*/
+@property (nonatomic, strong) UIImage *lightImage;
+
+/**
+ 深色返回首页按钮的图片对象，如果不传，会使用默认图标
+ （明亮模式）
+*/
+@property (nonatomic, strong) UIImage *darkImage;
+
+/**
+ 返回首页按钮的边框浅色颜色
+ （暗黑模式）
+ */
+@property (nonatomic, strong) UIColor *borderLightColor;
+
+/**
+ 返回首页按钮的边框深色颜色
+ （明亮模式）
+ */
+@property (nonatomic, strong) UIColor *borderDarkColor;
+
+/**
+ 返回首页按钮的背景浅色颜色
+ （明亮模式）
+ */
+@property (nonatomic, strong) UIColor *bgLightColor;
+
+/**
+ 返回首页按钮的背景深色颜色
+ （暗黑模式）
+ */
+@property (nonatomic, strong) UIColor *bgDarkColor;
+
+@end
+
+/// 胶囊样式
 @interface FATCapsuleConfig : NSObject
 
 /**
@@ -38,36 +105,6 @@
 @property (nonatomic, assign) CGFloat capsuleBorderWidth;
 
 /**
- 右上角胶囊视图的边框浅色颜色
- */
-@property (nonatomic, strong) UIColor *capsuleBorderLightColor;
-
-/**
- 右上角胶囊视图的边框深色颜色
- */
-@property (nonatomic, strong) UIColor *capsuleBorderDarkColor;
-
-/**
- 右上角胶囊视图的背景浅色颜色
- */
-@property (nonatomic, strong) UIColor *capsuleBgLightColor;
-
-/**
- 右上角胶囊视图的背景深色颜色
- */
-@property (nonatomic, strong) UIColor *capsuleBgDarkColor;
-
-/**
- 胶囊里的浅色更多按钮的图片对象，如果不传，会使用默认图标
- */
-@property (nonatomic, strong) UIImage *moreLightImage;
-
-/**
- 胶囊里的深色更多按钮的图片对象，如果不传，会使用默认图标
- */
-@property (nonatomic, strong) UIImage *moreDarkImage;
-
-/**
  胶囊里的更多按钮的宽度，高度与宽度相等
  */
 @property (nonatomic, assign) CGFloat moreBtnWidth;
@@ -76,16 +113,6 @@
  胶囊里的更多按钮的左边距
  */
 @property (nonatomic, assign) CGFloat moreBtnLeftMargin;
-
-/**
- 胶囊里的浅色更多按钮的图片对象，如果不传，会使用默认图标
- */
-@property (nonatomic, strong) UIImage *closeLightImage;
-
-/**
- 胶囊里的深色更多按钮的图片对象，如果不传，会使用默认图标
- */
-@property (nonatomic, strong) UIImage *closeDarkImage;
 
 /**
  胶囊里的关闭按钮的宽度，高度与宽度相等
@@ -98,12 +125,61 @@
 @property (nonatomic, assign) CGFloat closeBtnLeftMargin;
 
 /**
+ 胶囊里的浅色更多按钮的图片对象，如果不传，会使用默认图标
+ （暗黑模式）
+ */
+@property (nonatomic, strong) UIImage *moreLightImage;
+
+/**
+ 胶囊里的深色更多按钮的图片对象，如果不传，会使用默认图标
+ */
+@property (nonatomic, strong) UIImage *moreDarkImage;
+
+/**
+ 胶囊里的浅色关闭按钮的图片对象，如果不传，会使用默认图标
+ （暗黑模式）
+ */
+@property (nonatomic, strong) UIImage *closeLightImage;
+
+/**
+ 胶囊里的深色关闭按钮的图片对象，如果不传，会使用默认图标
+ （明亮模式）
+ */
+@property (nonatomic, strong) UIImage *closeDarkImage;
+
+/**
+ 右上角胶囊视图的边框浅色颜色
+ （暗黑模式）
+ */
+@property (nonatomic, strong) UIColor *capsuleBorderLightColor;
+
+/**
+ 右上角胶囊视图的边框深色颜色
+ （明亮模式）
+ */
+@property (nonatomic, strong) UIColor *capsuleBorderDarkColor;
+
+/**
+ 右上角胶囊视图的背景浅色颜色
+ （明亮模式）
+ */
+@property (nonatomic, strong) UIColor *capsuleBgLightColor;
+
+/**
+ 右上角胶囊视图的背景深色颜色
+ （暗黑模式）
+ */
+@property (nonatomic, strong) UIColor *capsuleBgDarkColor;
+
+/**
  胶囊里的分割线的浅色颜色
+ （暗黑模式）
  */
 @property (nonatomic, strong) UIColor *capsuleDividerLightColor;
 
 /**
  胶囊里的分割线的深色颜色
+ （明亮模式）
  */
 @property (nonatomic, strong) UIColor *capsuleDividerDarkColor;
 
@@ -120,6 +196,10 @@
  右上角胶囊的配置
  */
 @property (nonatomic, strong) FATCapsuleConfig *capsuleConfig;
+/**
+ 返回首页按钮的配置
+ */
+@property (nonatomic, strong) FATNavHomeConfig *navHomeConfig;
 
 /**
  小程序里加载H5时进度条的颜色
@@ -132,7 +212,7 @@
 @property (nonatomic, assign) FATMoreViewStyle moreMenuStyle;
 
 /**
- 隐藏...弹出菜单中的【回到首页】菜单，默认为NO
+ 隐藏...导航栏中的返回首页按钮，默认为NO
  */
 @property (nonatomic, assign) BOOL hideBackToHome;
 

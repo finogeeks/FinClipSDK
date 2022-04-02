@@ -57,10 +57,10 @@ typedef NS_ENUM(NSUInteger, FATAppletVersionType) {
 };
 
 typedef NS_ENUM(NSUInteger, FATAppletLifeCycle) {
-    FATAppletLifeCycleUnknow,       // 未知阶段
-    FATAppletLifeCycleLaunch,       // 启动阶段
-    FATAppletLifeCycleActive,       // 运行阶段
-    FATAppletLifeCycleBackground,   // 后台阶段
+    FATAppletLifeCycleUnknow,     // 未知阶段
+    FATAppletLifeCycleLaunch,     // 启动阶段
+    FATAppletLifeCycleActive,     // 运行阶段
+    FATAppletLifeCycleBackground, // 后台阶段
 };
 
 /**
