@@ -31,9 +31,23 @@ typedef NS_ENUM(NSUInteger, FATErrorCode) {
     FATErrorCodeTrialCanceled = 13001,  // 体验版已取消
     FATErrorCodeTempExpried = 13002,    // ide临时二维码过期
     FATErrorCodeSameAppID = 13003,      // 相同的小程序ID
+    FATErrorCodeDecryptFail = 13004,    // 解密失败
+
+    FATErrorCodeAppletNotFound = 14000,          // 未找到appletId指定小程序
+    FATErrorCodeForegroundAppletNotFound = 14001 // 未找到前台运行的小程序
 };
 
+/**
+ * 小程序请求返回的错误信息由后端提供
+ * 使用 statusCode 和 originData 存储相关信息
+ * 由于后端未返回错误标题信息，故使用 statusCode 映射获取
+ */
 @interface FATError : NSError
+
+/// 请求返回的错误码
+@property (nonatomic, assign) NSInteger statusCode;
+/// 请求返回解析出来的原始报错信息
+@property (nonatomic, copy) NSDictionary *originData;
 
 - (instancetype)initWithCode:(FATErrorCode)code message:(NSString *)message;
 

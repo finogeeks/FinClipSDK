@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>403</key>
+	<string>小程序不可用</string>
+	<key>404</key>
+	<string>小程序打开失败</string>
+	<key>500</key>
+	<string>服务不可用</string>
+	<key>10003</key>
+	<string>网络请求异常</string>
+	<key>11000</key>
+	<string>服务器异常</string>
+	<key>11001</key>
+	<string>服务器数据异常</string>
+</dict>
+</plist>

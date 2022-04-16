@@ -92,11 +92,13 @@ FOUNDATION_EXTERN NSString *const kRecentUsedAppletListDidChangeNotification;
 
 #pragma mark - 小程序生命周期事件通知
 
-//小程序关闭通知，ViewController和View可以监听 userInfo:@{@"appletId":appId}
+// 小程序关闭通知，ViewController和View可以监听 userInfo:@{@"appletId":appId}
 FOUNDATION_EXTERN NSString *const FATAppletCloseNotification;
 
-//小程序进入后台 ViewController和View可以监听 userInfo:@{@"appletId":appId}
+// 小程序进入后台 ViewController和View可以监听 userInfo:@{@"appletId":appId}
 FOUNDATION_EXTERN NSString *const FATAppletEnterBackgroundNotification;
-//
+
+// 小程序被销毁的通知    userInfo:@{@"appletId":appId}
+FOUNDATION_EXTERN NSString *const FATAppletDestroyNotification;
 
 #endif /* FATConstant_h */

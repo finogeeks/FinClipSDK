@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>403</key>
+	<string>Forbidden</string>
+	<key>404</key>
+	<string>Error</string>
+	<key>500</key>
+	<string>Internal Server Error</string>
+	<key>10003</key>
+	<string>Unable to access the network</string>
+	<key>11000</key>
+	<string>Serve Error</string>
+	<key>11001</key>
+	<string>Server Data Error</string>
+</dict>
+</plist>

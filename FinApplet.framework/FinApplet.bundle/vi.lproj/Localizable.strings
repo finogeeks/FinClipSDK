@@ -20,3 +20,14 @@
 "Select a minimum of %zd photos" = "Chọn ít nhất %zd tấm hình";
 "Allow %@ to access your album in \"Settings -> Privacy -> Photos\"" = "Vui lòng tại mục iPhone \" Cài đặt – quyền riêng tư - Ảnh\" mở quyền cho phép %@ truy cập ảnh.";
 "Please allow %@ to access your camera in \"Settings -> Privacy -> Camera\"" = "Vui lòng tại mục iPhone \" Cài đặt – quyền riêng tư - Ảnh\" mở quyền cho phép %@ truy cập máy ảnh";
+
+"Apply" = "áp dụng";
+"Reject" = "từ";
+"Allow" = "cho";
+
+"Obtain your location info" = "Lấy thông tin vị trí";
+"Obtain your profile photo" = "Đọc ảnh và tập tin trên thiết bị";
+"Access and save pictures or videos on device" = "Lưu ảnh hay video vào album của bạn";
+"Take photos and record videos" = "Chụp ảnh và quay phim";
+"Use your microphone" = "Mở microphone.";
+"Use your bluetooth" = "Dùng Bluetooth đi";
