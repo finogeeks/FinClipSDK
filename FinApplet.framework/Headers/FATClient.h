@@ -268,27 +268,45 @@
  @param handler 回调
  @return 返回注册结果
  */
-- (BOOL)registerExtensionApi:(NSString *)extApiName handle:(void (^)(id param, FATExtensionApiCallback callback))handler;
+- (BOOL)registerExtensionApi:(NSString *)extApiName handler:(void (^)(FATAppletInfo *appletInfo, id param, FATExtensionApiCallback callback))handler;
+
+- (BOOL)registerExtensionApi:(NSString *)extApiName handle:(void (^)(id param, FATExtensionApiCallback callback))handler __attribute__((deprecated("使用 -registerExtensionApi:handler: 代替")));
 
 /**
  注册同步扩展Api
- @param extApiName 扩展的api名称
- @param target 实现同步api的类
+ @param syncExtApiName 扩展的api名称
+ @param handler 回调
  @return 返回注册结果
  */
-- (BOOL)registerSyncExtensionApi:(NSString *)syncExtApiName target:(id)target;
+- (BOOL)registerSyncExtensionApi:(NSString *)syncExtApiName handler:(NSDictionary *(^)(FATAppletInfo *appletInfo, id param))handler;
 
-/// 为HTML 注册要调用的原生 api
-/// @param webApiName 原生api名字
-/// @param handler 回调
-- (BOOL)fat_registerWebApi:(NSString *)webApiName handle:(void (^)(id param, FATExtensionApiCallback callback))handler;
+/**
+ 为HTML 注册要调用的原生 api
+ @param webApiName 原生api名字
+ @param handler 回调
+ */
+- (BOOL)fat_registerWebApi:(NSString *)webApiName handler:(void (^)(FATAppletInfo *appletInfo, id param, FATExtensionApiCallback callback))handler;
 
-/// 原生调用HTML中的JS函数
-/// @param eventName 函数名
-/// @param paramString 函数的参数字典转成的json
-/// @param pageId webView ID，可不传，默认调用最顶层页面里H5的函数
-/// @param hanler 调用结果回调
-- (void)fat_callWebApi:(NSString *)eventName paramString:(NSString *)paramString pageId:(NSNumber *)pageId handler:(void (^)(id result, NSError *error))hanler;
+- (BOOL)fat_registerWebApi:(NSString *)webApiName handle:(void (^)(id param, FATExtensionApiCallback callback))handler __attribute__((deprecated("使用 -fat_registerWebApi:handler: 代替")));
+
+/**
+ 原生调用HTML中的JS函数（前台运行的小程序）
+ @param eventName 函数名
+ @param paramString 函数的参数字典转成的json
+ @param pageId webView ID，可不传，默认调用最顶层页面里H5的函数
+ @param handler 调用结果回调：error code为FATErrorCodeAppletNotFound，未找到前台运行的小程序
+ */
+- (void)fat_callWebApi:(NSString *)eventName paramString:(NSString *)paramString pageId:(NSNumber *)pageId handler:(void (^)(id result, NSError *error))handler;
+
+/**
+ 原生调用HTML中的JS函数（appletId指定的小程序）
+ @param eventName 函数名
+ @param appletId 小程序id，指定调用的小程序
+ @param paramString 函数的参数字典转成的json
+ @param pageId webView ID，可不传，默认调用最顶层页面里H5的函数
+ @param handler 调用结果回调：error code为FATErrorCodeForegroundAppletNotFound，未找到appletId指定小程序
+*/
+- (void)fat_callWebApi:(NSString *)eventName applet:(NSString *)appletId paramString:(NSString *)paramString pageId:(NSNumber *)pageId handler:(void (^)(id result, NSError *error))handler;
 
 #pragma mark - tool api
 
@@ -345,6 +363,14 @@
  @return 加密密文
  */
 - (NSString *)getSM3String:(NSString *)plainText;
+
+/**
+ 通过appletId获取小程序信息
+ 
+ @param appletId 小程序id
+ @return 小程序信息
+ */
+- (FATAppletInfo *)getAppletInfo:(NSString *)appletId;
 
 #pragma mark - new apis
 

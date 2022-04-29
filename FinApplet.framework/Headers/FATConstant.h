@@ -69,7 +69,7 @@ typedef NS_ENUM(NSUInteger, FATAppletLifeCycle) {
  @param code 处理结果码
  @param result 处理结果数据
  */
-typedef void (^FATExtensionApiCallback)(FATExtensionCode code, NSDictionary<NSString *, NSObject *> *result);
+typedef void (^FATExtensionApiCallback)(FATExtensionCode code, NSDictionary<NSString *, id> *result);
 
 #pragma mark - 启动小程序时的启动参数
 typedef NSString *FATStartParamKey NS_REFINED_FOR_SWIFT;

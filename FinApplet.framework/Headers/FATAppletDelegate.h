@@ -125,6 +125,26 @@
  */
 - (void)applet:(NSString *)appletId dealloc:(NSError *)error;
 
+#pragma mark - H5 hook events
+/**
+ 小程序H5中发出的request包含body时会触发该事件
+ requestInfo 中会包含
+ bodyType: body内容的类型
+ requestHref: request做在页面的链接
+ requestId：请求id，每次请求都会构造，后续拦截请求时，可在query参数中通过FinClipHookBridge-RequestId匹配
+ requestUrl：发起request时，请求的地址。
+ value: request的body内容。
+ 示例
+ {
+     bodyType = String;
+     requestHref = "http://aaronly.gitee.io/aymj";
+     requestId = 16499170263357297;
+     requestUrl = "https://www.finclip.com/api/v1/mop/mop-fast-trial-manager/web/visits/statistics";
+     value = "{\"type\":\"download_click\"}";
+ };
+ */
+- (void)applet:(FATAppletInfo *)appletInfo hookRequestInfo:(NSDictionary *)requestInfo;
+
 #pragma mark - more menu
 
 /**

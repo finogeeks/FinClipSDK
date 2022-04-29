@@ -125,6 +125,20 @@ apm 统计的扩展信息
 */
 @property (nonatomic, copy) NSString *baseLoadFailedViewClass;
 
+/**
+ 是否开启小程序中加载的H5页面hook功能，非必填。
+ 如果宿主app 拦截了http 或https，会导致H5中的request 丢失body。我们SDK为了兼容这一问题，会hook request请求，
+ 在发起请求之前，先将body中的参数，通过代理方法传递给宿主App。宿主App可自行存储每个request的body，然后在
+ 自定义的URLProtocol里发起请求之前，组装上body内容。
+ */
+@property (nonatomic, assign) BOOL enableH5AjaxHook;
+
+/**
+ 开启enableH5AjaxHook后，会hook request请求，会在原request 的url 后拼上一个FinClipHookBridge-RequestId=xxx的参数。
+ 而该参数可设置参数名，比如您可以设置Key 为 FinClip-RequestId，这样会拼接FinClip-RequestId=xxx的参数。
+ */
+@property (nonatomic, copy) NSString *h5AjaxHookRequestKey;
+
 #pragma mark - method
 /// 创建config对象
 /// @param appSecret appSecret，也就是SDK Secret
