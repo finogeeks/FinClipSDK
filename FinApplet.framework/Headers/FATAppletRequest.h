@@ -6,7 +6,7 @@
 //  Copyright © 2020 finogeeks. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "FATConstant.h"
 
 @interface FATAppletBaseRequest : NSObject
@@ -118,6 +118,12 @@
 
 /// 运行本地小程序
 @interface FATLocalAppletRequest : FATAppletBaseRequest
+
+/**
+ 小程序的logo图片对象，非必填
+ 如果为nil，则会加载appletLogo。
+ */
+@property (nonatomic, strong) UIImage *logoImage;
 
 /**
  小程序可访问的域名白名单列表，非必填

@@ -26,3 +26,4 @@
 #import "FATSearchAppletRequest.h"
 #import "FATBaseLoadingView.h"
 #import "FATBaseLoadFailedView.h"
+#import "FATMoreMenuHelper.h"

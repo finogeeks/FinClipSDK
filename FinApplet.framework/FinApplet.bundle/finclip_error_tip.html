@@ -141,7 +141,6 @@
   
 window.FinChatJSBridge.invoke('initPage', {}, (pageId) => {
     window.FinChatJSBridge.invoke('getNonBusinessDomainHtmlParams', { pageId }, (result) => {
-        const imgurl = result.appAvatar;
         let wvurl = result.url;
         const idx = wvurl.indexOf('://');
         if (idx>0) {

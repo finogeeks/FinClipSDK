@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UIView *dotView;
 /**
  中间的小程序图标
+ 可以修改图标的位置、大小等，图标的图片请通过开放平台修改
  */
 @property (nonatomic, strong) UIImageView *iconImageView;
 /**
@@ -40,6 +41,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) FATLoadingAnimationView *loadingView;
 /**
  小程序标题
+ 可以修改标题的颜色、位置、大小等，标题的文字请通过开放平台修改
  */
 @property (nonatomic, strong) UILabel *titleLabel;
 

@@ -116,12 +116,14 @@ apm 统计的扩展信息
 /**
 小程序的自定义启动加载页，非必填。
  自定义启动加载页必须继承自FATBaseLoadingView
+ 注意：swift中的类名带有命名空间，可以通过NSStringFromClass获取
 */
 @property (nonatomic, copy) NSString *baseLoadingViewClass;
 
 /**
 小程序的自定义启动失败页，非必填。
  自定义启动失败页必须继承自FATBaseLoadFailedView
+ 注意：swift中的类名带有命名空间，可以通过NSStringFromClass获取
 */
 @property (nonatomic, copy) NSString *baseLoadFailedViewClass;
 
@@ -138,6 +140,12 @@ apm 统计的扩展信息
  而该参数可设置参数名，比如您可以设置Key 为 FinClip-RequestId，这样会拼接FinClip-RequestId=xxx的参数。
  */
 @property (nonatomic, copy) NSString *h5AjaxHookRequestKey;
+
+/**
+ 小程序中页面栈的最大限制。默认值为0，标识不限制。
+ 例如，设置为5，则表示页面栈中最多可有5个页面。从主页最多可再navigateTo 4 层页面。
+ */
+@property (nonatomic, assign) NSUInteger pageCountLimit;
 
 #pragma mark - method
 /// 创建config对象

@@ -6,7 +6,7 @@
 //  Copyright © 2019 finogeeks. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "FATConstant.h"
 
 @interface FATAppletSimpleInfo : NSObject
@@ -26,8 +26,11 @@
 /// 小程序的机构id
 @property (nonatomic, copy) NSString *groupId;
 
-/// 小程序图标
+/// 小程序图标的地址
 @property (nonatomic, copy) NSString *appAvatar;
+
+/// 离线小程序(本地小程序)设置的图标
+@property (nonatomic, strong) UIImage *logoImage;
 
 /// 小程序名称
 @property (nonatomic, copy) NSString *appTitle;
@@ -63,6 +66,11 @@
  小程序启动时的启动参数
  */
 @property (nonatomic, copy) NSDictionary *startParams;
+
+/**
+ 小程序关联的微信信息
+ */
+@property (nonatomic, copy) NSDictionary *wechatLoginInfo;
 
 /**
  * 小程序类型（线上版、体验版、临时版、审核版、开发版）
